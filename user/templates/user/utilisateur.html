@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+{% load permission_tags %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block style %}
+<style type="text/css">
+    .btn-send {
+        background-color: #337ab7 !important;
+        color: #FFFFFF;
+    }
+
+   	 #_login {
+   	 	color: #F0A2CD;
+   	 }
+
+   	 #form {
+   	 	margin-top: 1%;
+   	 }
+
+   	 .well {
+   	 	background: rgba(255, 255, 255, 1);
+		opacity: 0.8;
+   	 }
+
+   	 .head {
+   	 	margin-top: 1%;
+		padding: 0;
+   	 }
+    .head p a {
+        background-color: transparent;
+        color: #337ab7;
+        text-decoration: none;
+        padding: 3px;
+    }
+    .head p a:hover,
+    .head p a:active {
+        background: #337ab7;
+        color: white;
+        border-radius: 3px;
+    }
+    .buttonHolder {
+        text-align: left;
+    }
+    .buttonHolder input{
+        font-weight: bold;
+        font-size: 100%;
+    }
+    .buttonHolder input:hover {
+        cursor: pointer;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+	<h2 class="text-center">Ajouter un utilisateur</h2>
+    <div class="row">
+        <form class="form-horizontal" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Matricule :</label>
+                <div class="col-sm-5">
+                    {{form.matricule}}
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Prénoms :</label>
+                <div class="col-sm-5">
+                    {{form.first_name}}
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Nom :</label>
+                <div class="col-sm-5">
+                    {{form.last_name}}
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Email :</label>
+                <div class="col-sm-5">
+                    {{form.email}}
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Genre :</label>
+                <div class="col-sm-5">
+                    {{form.genre}}
+                </div>
+            </div>
+            <div>
+                <label>Service :</label>
+                <div>
+                    {{form.service}}
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Fonction :</label>
+                <div class="col-sm-5">
+                    {{form.fonction}}
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Téléphone 1 ☎️ :</label>
+                <div class="col-sm-5">
+                    {{form.phone1}}
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Téléphone 2 ☎️ :</label>
+                <div class="col-sm-5">
+                    {{form.phone2}}
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Adresse :</label>
+                <div class="col-sm-5">
+                    {{form.address}}
+                </div>
+            </div>
+            <div class="form-group text-center">
+                <input class="btn btn-success btn-lg" type="submit" value="Valider">
+                <a class="btn btn-warning btn-lg" href="javascript:history.go(-1)">Annuler</a>
+            </div>
+        </form>
+    </div>
+{% endblock content %}
+{% block javascript %}
+	<script>
+
+	</script>
+{% endblock javascript%}

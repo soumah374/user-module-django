@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block style %}
+<style type="text/css">
+    body,
+    .body {
+        background: #DDD;
+    }
+
+    body:before {
+        display: none;
+    }
+
+    .dropdown-content li>a,
+    .dropdown-content li>span {
+        color: #000;
+    }
+
+    #name:hover,
+    #name:active,
+    #name:focus {
+        color: #FFF;
+    }
+
+    .navbar-inverse .navbar-nav>.active {
+        border-bottom: 7px solid #DDD;
+    }
+
+    .container {
+        width: 100%;
+    }
+    .modal-title {
+      text-align: center;
+      font-weight: bold;
+    }
+    .ms-parent {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #9E9E9E;
+    }
+    .ms-choice {
+      background-color: transparent !important;
+    }
+    .ms-choice>span {
+      padding-left: 0;
+    }
+    .ms-drop {
+      border: none;
+      border-radius: 0;
+    }
+    .label-choice {
+      top: -10px !important;
+    }
+    .color-inp-b {
+      border-bottom: 2px solid #26A69A;
+    }
+    .color-inp {
+      color: #26A69A !important;
+    }
+    .ms-drop>ul {
+      max-height: initial !important;
+    }
+    .ms-drop ul>li label {
+      font-size: 16px;
+      line-height: 22px;
+      padding: 5px;
+    }
+    .ms-drop>ul>li>label>input[type="checkbox"] {
+      position: relative;
+      opacity: 1;
+      pointer-events: auto;
+      margin-right: 5px;
+    }
+
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+
+
+<form class="form form-card content" method="post">
+    <fieldset class="form-fieldset">
+        <legend class="form-legend">Ajouter un type d'utilisateur</legend>
+        {% csrf_token %}
+        <div class="row" style="margin-top: 20px;">
+            <div class="input-field col s6">
+                <input type="text" value="{{type_utilisateur.name}}" name="name" maxlength="100" required id="id_name">
+                <label for="id_name">Nom du type utilisateur</label>
+            </div>
+
+            <div class="input-field col s6">
+              <select name="home" id="id_home">
+                {% for page in pages %}
+                  <option value="{{ page.page }}">{{ page.page }}</option>
+                {% endfor %}
+              </select>
+              <label >Page d'accueil</label>
+          </div>
+        </div>
+
+        <div class="row">
+            <!-- <div class="input-field col s12">
+                <p>
+                    <label> 
+                        <input type="checkbox" id="tout" name="tout"/>
+                        <span>Tout Selectionner</span>
+                    </label>
+                </p>
+            </div> -->
+        </div>
+        <div class="row perm" style="margin-top: 20px;">
+            {% for permission in permissions %}
+            <div class="input-field col s6" style="margin-top: 25px;">
+                <select id="id_permissions_{{permission.group}}" name="permissions_{{permission.group}}"
+                    multiple="multiple" size="5">
+                    <optgroup label="{{permission.group}}">
+                        {% for p in permission.permissions %}
+                        <option value="{{ p.value }}"> {{ p.name }}</option>
+                        {% endfor %}
+                    </optgroup>
+                </select>
+                <label class="label-choice">{{permission.group}}</label>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="row">
+            <button class="btn btn-material_success btn-large" type="submit"> Enregistrer </button>
+            <a class="btn btn-material btn-large pull-right" href="javascript:history.go(-1)" id="name"> Annuler</a>
+        </div>
+    </fieldset>
+</form>
+</div>
+{% endblock content %}
+{% block javascript %}
+<script>
+    $(document).ready(function () {
+        $('.perm select').multipleSelect({
+            selectAll: false,
+            placeholder: 'Selectionez une ou plusieurs permissions'
+        });
+
+        $("#is_chef").on('click', function () {
+            $('#is_adjoint').removeAttr('checked');
+        });
+        
+        $(".id_permissions").multipleSelect({
+            selectAll: false,
+            placeholder: 'Selectionez une ou plusieurs permissions'
+        });
+
+        $("#is_adjoint").on('click', function () {
+            $('#is_chef').removeAttr('checked');
+        });
+
+        $("#tout").change(function () {
+            $('select option').add("selected")
+        })
+
+        $('.label-choice').addClass('active')
+        $('.ms-parent').focusin(()=>{
+          $('.label-choice').addClass('color-inp')
+          $('.ms-parent').addClass('color-inp-b')
+        })
+        $('.ms-parent').focusout(()=>{
+          $('.label-choice').removeClass('color-inp')
+          if ($('.ms-choice>span').hasClass('placeholder')) {
+            $('.ms-parent').removeClass('color-inp-b')
+          }
+        })
+
+        $("#id_home").formSelect()
+    })
+</script>
+{% endblock javascript%}

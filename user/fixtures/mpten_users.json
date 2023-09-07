@@ -1,0 +1,469 @@
+[
+  {
+    "model": "user.Utilisateur",
+    "pk": 21,
+    "fields": {
+      "is_superuser": "False",
+      "isAdminInstance":"True",
+      "is_admin": "False",
+      "is_staff": "True",
+      "email": "admin@mpten.com",
+      "first_name": "admin",
+      "last_name": "admin",
+      "type_utilisateur": 214,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 22,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "ministre.mpten@gouvernement.gov.gn",
+      "first_name": "Aminata",
+      "last_name": "KABA",
+      "service": 21,
+      "fonction": 21,
+      "type_utilisateur": 21,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 23,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "sg.mpten@gouvernement.gov.gn",
+      "first_name": "Oliano",
+      "last_name": "BAMBA",
+      "service": 22,
+      "fonction": 22,
+      "type_utilisateur": 21,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 24,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "chefcab.mpten@gouvernement.gov.gn",
+      "first_name": "N'Faly",
+      "last_name": "SYLLA",
+      "service": 23,
+      "fonction": 23,
+      "type_utilisateur": 21,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 25,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "cp@mpten.gov.gn",
+      "first_name": "Alpha",
+      "last_name": "CAMARA",
+      "service": 21,
+      "fonction": 24,
+      "type_utilisateur": 22,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 26,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "ct.mpten@gouvernement.gov.gn",
+      "first_name": "Fod\u00e9",
+      "last_name": "YOULA",
+      "service": 21,
+      "fonction": 25,
+      "type_utilisateur": 22,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 27,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "ccm@mpten.gov.gnn",
+      "first_name": "6 Hadja Saran",
+      "last_name": "TOURE",
+      "service": 21,
+      "fonction": 26,
+      "type_utilisateur": 22,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 28,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "ig@mpten.gov.gn",
+      "first_name": "Fod\u00e9",
+      "last_name": "FOFANA",
+      "service": 24,
+      "fonction": 27,
+      "type_utilisateur": 27,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 29,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "cj@mpten.gov.gn",
+      "first_name": "Thierno Mamadou",
+      "last_name": "BAH",
+      "service": 21,
+      "fonction": 28,
+      "type_utilisateur": 22,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 210,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "iga@mpten.gov.gn",
+      "first_name": "Ibrahima Semega",
+      "last_name": "DIANE",
+      "service": 24,
+      "fonction": 29,
+      "type_utilisateur": 28,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 211,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dgbsd.mpten@gouvernement.gov.gn",
+      "first_name": "Yay\u00e9 Mariama",
+      "last_name": "DIALLO",
+      "service": 25,
+      "fonction": 210,
+      "type_utilisateur": 27,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 212,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dgabsd@mpten.gov.gn",
+      "first_name": "Souar\u00e9ba",
+      "last_name": "DIABY",
+      "service": 25,
+      "fonction": 211,
+      "type_utilisateur": 28,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 213,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dnt@mpten.gov.gn",
+      "first_name": "Tamim Ibrahima",
+      "last_name": "DIAWARA",
+      "service": 26,
+      "fonction": 212,
+      "type_utilisateur": 27,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 214,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dnat@mpten.gov.gn",
+      "first_name": "Noumouke",
+      "last_name": "CONDE",
+      "service": 26,
+      "fonction": 213,
+      "type_utilisateur": 28,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 215,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dntien@mpten.gov.gn",
+      "first_name": "Mamadou Saidou",
+      "last_name": "CISSE",
+      "service": 27,
+      "fonction": 214,
+      "type_utilisateur":27,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 216,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dnatien@mpten.gov.gn",
+      "first_name": "Mamady 1",
+      "last_name": "DIABATE",
+      "service": 27,
+      "fonction": 215,
+      "type_utilisateur": 28,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 217,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dnp@mpten.gov.gn",
+      "first_name": "Serge CECE",
+      "last_name": "MONEMOU",
+      "service": 28,
+      "fonction": 216,
+      "type_utilisateur": 27,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 218,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dnap@mpten.gov.gn",
+      "first_name": "Abdoulaye",
+      "last_name": "TOURE",
+      "service": 28,
+      "fonction": 217,
+      "type_utilisateur": 28,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 219,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "spcab@mpten.gov.gn",
+      "first_name": "spcab",
+      "last_name": "spcab",
+      "service": 23,
+      "fonction": 218,
+      "type_utilisateur": 24,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00",
+      "chief": 24
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 220,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "spsg@mpten.gov.gn",
+      "first_name": "spsg",
+      "last_name": "spsg",
+      "service": 22,
+      "fonction": 218,
+      "type_utilisateur": 24,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00",
+      "chief": 23
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 221,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "spminstre@mpten.gov.gn",
+      "first_name": "spm",
+      "last_name": "spm",
+      "service": 21,
+      "fonction": 218,
+      "type_utilisateur": 24,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00",
+      "chief": 22
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 222,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "sc@mpten.gov.gn",
+      "first_name": "secretaire",
+      "last_name": "central",
+      "service": 29,
+      "fonction": 218,
+      "type_utilisateur": 211,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 223,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "assistantmin.mpten@gouvernement.gov.gn",
+      "first_name": "Aicha",
+      "last_name": "Diallo",
+      "service": 21,
+      "fonction": 219,
+      "type_utilisateur": 22,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 316,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "archiveur.mpten@gouvernement.gov.gn",
+      "first_name": "Archiveur",
+      "last_name": "Archiveur",
+      "service": 434,
+      "fonction": 481,
+      "type_utilisateur": 212,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Company",
+    "pk": 21,
+    "fields": {
+      "name": "Application de Gestion de Courriers",
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  }
+]

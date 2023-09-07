@@ -1,0 +1,704 @@
+[
+    {
+        "model": "user.Services",
+        "pk": 11,
+        "fields": {
+            "name": "Cabinet du Ministre",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 12,
+        "fields": {
+            "name": "Secrétariat Général",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 13,
+        "fields": {
+            "name": "Inspection Générale",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 14,
+        "fields": {
+            "name": "Control Financier",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 15,
+        "fields": {
+            "name": "Division des Affaires Financières",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 16,
+        "fields": {
+            "name": "Division des Ressources Humaines",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 17,
+        "fields": {
+            "name": "Fonds Spécial d'Investissement",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 18,
+        "fields": {
+            "name": "Bureau Technique d'Appui à la Programmation",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 19,
+        "fields": {
+            "name": "Personne Responsable des Marchés Publics",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 110,
+        "fields": {
+            "name": "Centre des Ressources Documentaires",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 111,
+        "fields": {
+            "name": "Service Communication et Relations Publiques",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 112,
+        "fields": {
+            "name": "Service de Modernisation des Systèmes d'Information",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 113,
+        "fields": {
+            "name": "Service Genre et Equité",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 114,
+        "fields": {
+            "name": "Service Accueil et Infornation",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 115,
+        "fields": {
+            "name": "Service Hygiène, Santé et Sécurité",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 116,
+        "fields": {
+            "name": "Service Secrétariat Central",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 117,
+        "fields": {
+            "name": "Direction Nationale du Contrôle des Marchés Publics",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 118,
+        "fields": {
+            "name": "Direction Nationale de la Dette et de l'Aide Publique au Développement;",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 119,
+        "fields": {
+            "name": "Direction Nationale du Contrôle Financier",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 120,
+        "fields": {
+            "name": "Direction Nationale des Investissements Publics et du Système Intégré de Gestion",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 121,
+        "fields": {
+            "name": "Direction Nationale des Prévisions Economiques et de la Conjoncture",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 122,
+        "fields": {
+            "name": "Direction Nationale de la Planification et de l'Economie Rurale",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 123,
+        "fields": {
+            "name": "Direction Nationale Population et Développement",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 124,
+        "fields": {
+            "name": "Direction Générale du Patrimoine de l'État et des Investissements Privés",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 125,
+        "fields": {
+            "name": "Direction Générale du Trésor et de la Comptabilité Publique",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 126,
+        "fields": {
+            "name": "Centre de Perfectionnement en Finances Publiques",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 127,
+        "fields": {
+            "name": "Cellule Technique de Suivi des Programmes et de la réforme des finances publiques",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 128,
+        "fields": {
+            "name": "Unité des Partenariats Publics Privés",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 129,
+        "fields": {
+            "name": "Unité de Coordination et d'Exécution des Projets",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 130,
+        "fields": {
+            "name": "Institut National de la Statistique",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 131,
+        "fields": {
+            "name": "Observatoire National du Développement de la République de Guinée",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 132,
+        "fields": {
+            "name": "Fonds de Développement Economique et Social",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 133,
+        "fields": {
+            "name": "Inspections Régionales des Finances",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 134,
+        "fields": {
+            "name": "Services Régionaux du Contrôle des Marchés Publics",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 135,
+        "fields": {
+            "name": "Trésoreries Principales Régionales",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 136,
+        "fields": {
+            "name": "Inspections Régionales du Plan",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 137,
+        "fields": {
+            "name": "Directions Préfectorales du Plan",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 138,
+        "fields": {
+            "name": "Direction Communale du Plan de la Ville de Conakry",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk":139,
+        "fields": {
+            "name": "Services Préfectoraux du Contrôle des Marchés Publics",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 140,
+        "fields": {
+            "name": "Control Financier Préfectoral",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 141,
+        "fields": {
+            "name": "Trésoreries Préfectorales",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 142,
+        "fields": {
+            "name": "Commission Nationale de la Planification",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 143,
+        "fields": {
+            "name": "Conseil National de la Statistique",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 144,
+        "fields": {
+            "name": "Commission Nationale Population et Développement Durable",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 145,
+        "fields": {
+            "name": "Comité d'Evaluation des Politiques et Institutions Nationales",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 146,
+        "fields": {
+            "name": "Conseil de Discipline",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 147,
+        "fields": {
+            "name": "Service Audit DNDAPD",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 148,
+        "fields": {
+            "name": "Coordination UCEP",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 149,
+        "fields": {
+            "name": "Coordination PPD",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 150,
+        "fields": {
+            "name": "ONDRG",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 151,
+        "fields": {
+            "name": "Direction Générale de l'Institut National des Statistiques (INS)",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 152,
+        "fields": {
+            "name": "Fonds  De Developpement Economique Et Social (FDES)",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 153,
+        "fields": {
+            "name": "Cellule Technique de Suivi des Programmes (CTSP)",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 154,
+        "fields": {
+            "name": "Service Informatique",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 155,
+        "fields": {
+            "name": "Service Formation",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 156,
+        "fields": {
+            "name": "Service Comptabilité Materiel",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 157,
+        "fields": {
+            "name": "Cellule National de Traitement des Informations Financières",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 158,
+        "fields": {
+            "name": "Division Analyse Conjoncturelle de la DNPEC",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 159,
+        "fields": {
+            "name": "Division Etude Economique de la DNPEC",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 160,
+        "fields": {
+            "name": "Division Infrastructures et Equipements à la DNIP",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 161,
+        "fields": {
+            "name": "Division Eau, Energie, Industrie, Mines et Services à la DNIP",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 162,
+        "fields": {
+            "name": "Division Secteur Social et Administration à la DNIP",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 163,
+        "fields": {
+            "name": "Division Développement Rural et Environnement à la DNIP",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 164,
+        "fields": {
+            "name": "Division Programmation et Budgetisdation à la DNIP",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 165,
+        "fields": {
+            "name": "Division Suivi-évaluation à la DNIP",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 166,
+        "fields": {
+            "name": "PRMP",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 167,
+        "fields": {
+            "name": "Service Comptabilité",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 168,
+        "fields": {
+            "name": "Division SIGPIP",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 169,
+        "fields": {
+            "name": "Section Financement Extérieur",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Services",
+        "pk": 170,
+        "fields": {
+            "name": "Chef de Cabinet",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    }
+    
+
+]

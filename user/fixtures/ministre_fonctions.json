@@ -1,0 +1,380 @@
+[
+    {
+        "model": "user.Fonction",
+        "pk": 1,
+        "fields": {
+            "name": "Pr\u00e9sident",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 2,
+        "fields": {
+            "name": "Ministre S\u00e9cr\u00e9taire G\u00e9n\u00e9ral",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 3,
+        "fields": {
+            "name": "Directeur de Cabinet",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 4,
+        "fields": {
+            "name": "Assistant du PRG",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 5,
+        "fields": {
+            "name": "Directeur du Protocol",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 6,
+        "fields": {
+            "name": "Directeur de Communication",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 7,
+        "fields": {
+            "name": "Directrice Juridique",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 8,
+        "fields": {
+            "name": "Conseiller Principal",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 9,
+        "fields": {
+            "name": "Conseiller Juridique",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 10,
+        "fields": {
+            "name": "Conseiller Charg\u00e9 de Mission",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 11,
+        "fields": {
+            "name": "Conseiller Personnel du PRG",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 12,
+        "fields": {
+            "name": "Conseiller Charg\u00e9 de la Diplomatie et de la Coop\u00e9ration Internationale",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 13,
+        "fields": {
+            "name": "Conseiller Charg\u00e9 de l'Energie",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 14,
+        "fields": {
+            "name": "Premier Ministre",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 15,
+        "fields": {
+            "name": "Cheffe de Cabinet",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 16,
+        "fields": {
+            "name": "Directeur de \nCommunication",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 17,
+        "fields": {
+            "name": "Directeur Syst\u00e8me",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 18,
+        "fields": {
+            "name": "Conseiller T\u00e9l\u00e9com",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 19,
+        "fields": {
+            "name": "Assistante du PM",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 20,
+        "fields": {
+            "name": "Conseiller Mines et Energie",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 21,
+        "fields": {
+            "name": "Ministre",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 22,
+        "fields": {
+            "name": "S\u00e9cr\u00e9taire G\u00e9n\u00e9ral",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 23,
+        "fields": {
+            "name": "Chef de Cabinet",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 24,
+        "fields": {
+            "name": "assistante de la Ministre",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 25,
+        "fields": {
+            "name": "BSD",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 26,
+        "fields": {
+            "name": "Assistante du Ministre",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 27,
+        "fields": {
+            "name": "Secr\u00e9taire G\u00e9n\u00e9rale",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 28,
+        "fields": {
+            "name": "Secr\u00e9taire G\u00e9n\u00e9ral",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 29,
+        "fields": {
+            "name": "Secr\u00e9atire G\u00e9n\u00e9ral",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 30,
+        "fields": {
+            "name": "Assistant du Ministre",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 31,
+        "fields": {
+            "name": "Ministre ",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 32,
+        "fields": {
+            "name": "Secr\u00e9taire G\u00e9n\u00e9ral ",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 33,
+        "fields": {
+            "name": "Assistant de la Ministre",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 34,
+        "fields": {
+            "name": "Contact",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 35,
+        "fields": {
+            "name": "S\u00e9cr\u00e9taire G\u00e9n\u00e9ral Adjoint",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 36,
+        "fields": {
+            "name": "Directeur Travail Gouvernemental",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 37,
+        "fields": {
+            "name": "DG RTG",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 38,
+        "fields": {
+            "name": "Gouverneur",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 39,
+        "fields": {
+            "name": "Directeur G\u00e9n\u00e9ral",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 40,
+        "fields": {
+            "name": "Directeur G\u00e9n\u00e9ral Adjointe",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 41,
+        "fields": {
+            "name": "Administre G\u00e9n\u00e9ral",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 42,
+        "fields": {
+            "name": "Secr\u00e9taire",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    }
+]

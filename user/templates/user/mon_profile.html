@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load permission_tags %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block link %}
+{% endblock %}
+{% block style %}
+{% endblock %}
+
+{% block content %}
+	<section class="mt-5">
+		<div class="col-md-5 col-sm-10 m-auto bg-gray-light-3 box-shadow">
+			
+			<div class="col-md-10 m-auto pt-3">
+				<h3 class="bold-700 text-center">Mes Infos </h3>
+			</div>
+
+			<div class="col-10 m-auto pb-5">
+				{% comment %} {% crispy form %} {% endcomment %}
+                <form class="form-horizontal form-card" method="post">
+					{% csrf_token %}
+					{{ form.first_name | as_crispy_field }}
+					{{ form.last_name | as_crispy_field }}
+					{{ form.email | as_crispy_field }}
+					{{ form.phone | as_crispy_field }}
+					{{ form.address | as_crispy_field }}
+					{{ form.genre | as_crispy_field }}
+					{{ form.type_utilisateur | as_crispy_field }}
+
+					<button type="submit" class="btn btn-primary align-center">
+						<i class="fa fa-save"></i>
+							Enregistrer
+					</button>
+                    <a class="btn btn-secondary " href="javascript:history.go(-1)" id="name">
+						<i class="fa fa-arrow-circle-left"></i>
+                        Annuler
+                    </a>
+			 	</form>
+			</div>
+		</div>
+	</section>
+	
+
+{% endblock content %}
+{% block javascript %}
+	<script>
+	</script>
+{% endblock javascript%}

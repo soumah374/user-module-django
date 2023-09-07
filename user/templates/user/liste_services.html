@@ -1,0 +1,340 @@
+{% extends 'base.html' %}
+{% load permission_tags %}
+{% load static %}
+{% load lookup %}
+
+{% block style %}
+  <style>
+    .name:hover, .name:active,.name:focus {
+      color: #FFF;
+    }
+    .container {
+        width: 100%;
+    }
+    .modal-title {
+      text-align: center;
+      font-weight: bold;
+    }
+    a {
+      text-decoration: none !important;
+    }
+    .btn-active__style {
+      padding-left: 16px;
+      padding-right: 20px;
+    }
+    .btn-lg {
+      padding: 10px 16px;
+    }
+  </style>
+{% endblock %}
+
+{% block link %}
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" /> 
+{% endblock %}
+
+{% block content %}
+
+  <h2 class="text-center">Services</h2>
+
+  <div class="content">
+    {% if user.is_admin or user.isAdminInstance %}
+      <div class="row">
+        <div class="col-lg-8">
+          <button id="send-btn" type="button" class="btn btn-material_success btn-large" data-toggle="modal" data-target="#newService">
+            <span class="glyphicon glyphicon-plus"></span>
+            Ajouter un service
+          </button>
+        </div>
+        <br>
+        <div class="col-lg-4" style="display: flex; justify-content: flex-end; align-items: center;">
+            <a class="btn btn-primary" href="{{url}}?prints=print" role="button">Telecharger au format excel  </a> 
+          </div>
+      </div>
+      <br/>
+    {% endif %}
+    <table class="table table-striped table-bordered" cellspacing="0" width="100%" id="datatable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Service</th>
+          <th>Service Tutelle</th>
+          <th>Nombre de sous service</th>
+          <th>Nombre d'utilisateur</th>
+          <th>Date de création</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for service in services %}
+            <tr>
+              <td></td>
+              <td>{{ service.name }}</td>
+              <td>{{ service.get_servicetutelle }}</td>
+              <td>{{ service.get_subservices.count }}</td>
+              <td>{{ service.get_utilisateurs.count }}</td>
+              <td>{{ service.created_at }}</td>
+              <td>
+                    <a title="Détails" href="#" data-toggle="modal" data-target="#{{service.id}}view" class="btn-user">
+                      <span class="glyphicon glyphicon-eye-open"></span>
+                    </a>
+                    <a title="Editer" href="#" data-toggle="modal" data-target="#{{service.id}}edit" class="btn-user">
+                      <span class="glyphicon glyphicon glyphicon-pencil"></span>
+                    </a>
+                    <a title="Supprimer" href="#" data-toggle="modal" data-target="#{{service.id}}delete" class="btn-user">
+                      <span class="glyphicon glyphicon-trash"></span>
+                    </a>
+              </td>
+          </tr>
+
+            <!-- View Popup --->
+            <div id="{{service.id}}view" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content -->
+                  <form class="form-horizontal form-card" method="post" action="#">
+                      <fieldset class="form-fieldset">
+                        {% csrf_token %}
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Détails du service</h4>
+                          </div>
+                          <div class="modal-body" id="user-details">
+                            
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <input type="text" value="{{service.name}}" name="name" id="id_name" disabled>
+                                <label for="id_name">Intitulé du service</label>
+                              </div>
+                            </div>
+
+                            {% if service.get_servicetutelle %}
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  <input type="text" value="{{service.get_servicetutelle.name}}" disabled>
+                                  <label for="id_name">Service tutelle</label>
+                                </div>
+                              </div>
+                            {% endif %}
+
+                            {% if service.get_subservices %}
+                            <div class="row">
+                                <strong> Sous services </strong>
+                                  <ul>
+                                    {% for subservice in service.get_subservices %}
+                                      <li>{{ subservice.name }}</li>
+                                    {% endfor %}
+                                  </ul>
+                                </div>
+                            {% endif %}
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="submit" style="display: none;" class="btn btn-material_success">Mise à jour</button>
+                            <button type="button" class="btn btn-material" data-dismiss="modal">Fermer</button>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </form>
+                  </div>
+            </div>
+
+            <!-- Edit popup --->
+            <div id="{{service.id}}edit" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content -->
+                  <form class="form-horizontal form-card" method="post" action="{% url 'user:update_service' service.id %}">
+                      <fieldset class="form-fieldset">
+                        {% csrf_token %}
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Edition du service</h4>
+                          </div>
+                          <div class="modal-body" id="user-details">
+                          <input type='hidden' id="hidden_service_tutelle_{{service.id}}" name='hidden_service_tutelle' value=''/>
+
+  
+                            
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <input type="text" value="{{service.name}}" name="name" id="id_name">
+                                <label for="id_name">Intitulé du service</label>
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <select id="id_service_tutelle_{{service.id}}" name='service_tutelle' onchange=dropdownchange({{service.id}})>
+                                  <option value=""> -- Aucun --</option> 
+                                  {% for s in services %}
+                                    {% if service.get_servicetutelle and service.get_servicetutelle.id == s.id %}
+                                      <option value="{{s.id}}" selected>{{s.name}}</option>
+                                    {% elif service.id != s.id %}
+                                      <option value="{{s.id}}">{{s.name}}</option>
+                                    {% endif %}
+                                  {% endfor %}
+                                </select>
+                                <label for="id_service_tutelle_{{service.id}}">Service tutelle:</label>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="submit" class="btn btn-material_success">Mise à jour</button>
+                            <button type="button" class="btn btn-material" data-dismiss="modal">Annuler</button>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </form>
+                  </div>
+            </div>
+            
+            <!-- Delete popup --->
+          <div id="{{service.id}}delete" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Supression du services</h4>
+                    </div>
+                    <div class="modal-body" id="user-details">
+                        <h6>Etes vous sur de vouloir supprimer le service <strong> {{ service.name }} </strong>  ?</h6>
+                        <p>Si vous cliquez sur "Oui" le service sera supprimer avec ses sous-services </p>
+                        <div class="modal-footer">
+                            <a href="{% url 'user:delete_service' service.id %}" class="btn btn-material_danger" id="name">
+                                <span class="glyphicon glyphicon-trash"></span>
+                                  Oui
+                            </a>
+                            <button type="button" class="btn btn-material" data-dismiss="modal">Annuler</button>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+        {% endfor %}
+        
+          <!-- User Detail Modal -->
+          <div id="newService" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content -->
+              <form class="form-horizontal form-card" method="post" action="{% url 'user:service' %}">
+                <fieldset class="form-fieldset">
+                  {% csrf_token %}
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Ajout d'un service</h4>
+                    </div>
+                    <div class="modal-body" id="user-details">
+                    <input type='hidden' id="hidden_service_tutelle" name='hidden_service_tutelle' value=''/>
+
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <select id="id_service_tutelle" name='service_tutelle'>
+                             <option value=""> -- Aucun --</option> 
+                            {% for service in services %}
+                                <option value="{{service.id}}">{{service.name}}</option>
+                            {% endfor %}
+                          </select>
+                           <label for="id_service_tutelle">Service tutelle:</label>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="input-field col s12">
+                          {{form.name}}
+                          <label for="id_name">Nom du service: </label>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-material_success">Valider</button>
+                      <button type="button" class="btn btn-material" data-dismiss="modal">Annuler</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+      </tbody>
+    </table>
+  </div>
+
+{% endblock %}
+{% block javascript %}
+<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+<script>
+  $(document).ready(function () {
+
+    var t = $('#datatable').DataTable({
+      language: {
+        processing: "Traitement en cours...",
+        search: "Rechercher&nbsp;:",
+        lengthMenu: "Afficher _MENU_ &eacute;l&eacute;ments",
+        info: "Affichage de l'&eacute;l&eacute;ment _START_ &agrave; _END_ sur _TOTAL_ &eacute;l&eacute;ments",
+        infoEmpty: "Affichage de l'&eacute;l&eacute;ment 0 &agrave; 0 sur 0 &eacute;l&eacute;ments",
+        infoFiltered: "(filtr&eacute; de _MAX_ &eacute;l&eacute;ments au total)",
+        infoPostFix: "",
+        loadingRecords: "Chargement en cours...",
+        zeroRecords: "Aucun &eacute;l&eacute;ment &agrave; afficher",
+        emptyTable: "Aucune donnée disponible dans le tableau",
+        paginate: {
+          first: "Premier",
+          previous: "Pr&eacute;c&eacute;dent",
+          next: "Suivant",
+          last: "Dernier"
+        },
+        aria: {
+          sortAscending: ": activer pour trier la colonne par ordre croissant",
+          sortDescending: ": activer pour trier la colonne par ordre décroissant"
+        }
+      },
+      "columnDefs": [{
+        "searchable": false,
+        "orderable": false,
+        "targets": 0
+      }],
+      "order": [[1, 'asc']]
+    });
+
+    t.on('order.dt search.dt', function () {
+      t.column(0, { search: 'applied', order: 'applied' }).nodes().each(function (cell, i) {
+        cell.innerHTML = i + 1;
+      });
+    })
+    .draw();
+
+  });
+
+  $(document).ready(function () {
+
+    // loading select
+    // https://materializecss.com/select.html
+    $('select[name="service_tutelle"]').formSelect();
+
+    // dont really why when formselected called here 
+    // the value of the dropdown is not been sent to django
+    // so doing this for now but  this need to be fixed
+    // LSM (18/09/19)
+    $("#id_service_tutelle").on('change', function () {
+      var val = $("#id_service_tutelle").val();
+      $('#hidden_service_tutelle').val(val);
+      // console.log('changed', val);
+    });
+
+  });
+
+  // when i put this inside the document.load
+  // it will not work
+
+  function dropdownchange (id) {
+    var val = $('#id_service_tutelle_' + id).val();
+    $('#hidden_service_tutelle_' + id).val(val);
+
+  }
+
+</script>
+{% endblock %}

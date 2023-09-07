@@ -1,0 +1,5 @@
+{% autoescape off %}
+Bonjour Mr/Mme , <br />
+S il vous plait cliquez sur le lien ci-dessous pour vous enregistrez et valider votre compte. <br />
+<a href="http://{{ domain }}{% url 'user:activate' uidb64=uid token=token %}"> Enregistrez vous et Validez votre compte </a>
+{% endautoescape %}

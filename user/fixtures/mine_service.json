@@ -1,0 +1,332 @@
+[
+  {
+    "model": "user.Services",
+    "pk": 31,
+    "fields": {
+      "name": "Cabinet du Ministre",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 32,
+    "fields": {
+      "name": "Secrétariat Général",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 33,
+    "fields": {
+      "name": "Chef de Cabinet",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 34,
+    "fields": {
+      "name": "CONSEILLERS MMG",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 35,
+    "fields": {
+      "name": "Inspection Générale",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 36,
+    "fields": {
+      "name": "Service des Affaires Juridiques",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 37,
+    "fields": {
+      "name": "Bureau de Stratégie et de Développement (BSD)",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 38,
+    "fields": {
+      "name": "Brigade Anti-Fraude des Matières Précieuses (BAFMP)",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 39,
+    "fields": {
+      "name": "Service de Coopération et d’Investissement dans le Secteur Minier",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 310,
+    "fields": {
+      "name": "Service des Relations Communautaires et de Développement du Contenu local",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 311,
+    "fields": {
+      "name": "Service Genre et Équité (SGE)",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 312,
+    "fields": {
+      "name": "Division des Affaires Financières (DAF)",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 313,
+    "fields": {
+      "name": "Division des Ressources Humaines (DRH)",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 314,
+    "fields": {
+      "name": "Service Matériels",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 315,
+    "fields": {
+      "name": "Service Hygiène et Sécurité",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 316,
+    "fields": {
+      "name": "Direction Nationale des Mines (DNM)",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 317,
+    "fields": {
+      "name": "Centre de Promotion et de Développement Minier (CPDM)",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 318,
+    "fields": {
+      "name": "Direction Générale de Géophysique et de Sismologie",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 319,
+    "fields": {
+      "name": "Service National de Coordination des Projets Miniers (SNCPM)",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 320,
+    "fields": {
+      "name": "Office National des Géo-Services (ONGS)",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 321,
+    "fields": {
+      "name": "Bureau National d’Expertise du Diamant, Or et des Matières Précieuses (BNE)",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 322,
+    "fields": {
+      "name": "Laboratoire National de la Géologie (LNG)",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 323,
+    "fields": {
+      "name": "Société Guinéenne du Patrimoine Minier (SOGUIPAMI)",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 324,
+    "fields": {
+      "name": "Agence Nationale d’Aménagement des Infrastructures Minières (ANAIM)",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 325,
+    "fields": {
+      "name": "Fonds d’Investissement Minier (FIM)",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 326,
+    "fields": {
+      "name": "Projet d’Appui à la Gouvernance dans le Secteur Minier (PAGSEM)",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 327,
+    "fields": {
+      "name": "Initiative pour la Transparence dans les Industries Extractives (ITIE)",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 328,
+    "fields": {
+      "name": "Secrétariat Permanent du Processus de Kimberley (SPPK)",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 329,
+    "fields": {
+      "name": "Chambre des Mines de Guinée (CMG)",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 330,
+    "fields": {
+      "name": "Secrétariat Central",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 331,
+    "fields": {
+      "name": "Direction Nationale de la Géologie (DNG)",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 332,
+    "fields": {
+      "name": "Service Archivages et Documentations",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 333,
+    "fields": {
+      "name": "Service Technique",
+      "instance": 3,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  }
+]

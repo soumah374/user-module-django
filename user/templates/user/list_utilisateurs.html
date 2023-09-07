@@ -1,0 +1,333 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load lookup %}
+
+{% block style %}
+  <style>
+    .name:hover, .name:active,.name:focus {
+      color: #FFF;
+    }
+    .container {
+        width: 100%;
+    }
+    .modal-title {
+      text-align: center;
+      font-weight: bold;
+    }
+    a {
+      text-decoration: none !important;
+    }
+    .btn-active__style {
+      padding-left: 16px;
+      padding-right: 20px;
+    }
+    .btn-lg {
+      padding: 10px 16px;
+    }
+  </style>
+{% endblock %}
+
+{% block link %}
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" />
+{% endblock %}
+
+{% block content %}
+{% hasPermission user 'view_user' as view_user %}
+{% hasPermission user 'add_user' as add_user %}
+{% hasPermission user 'edit_user' as edit_user %}
+{% hasPermission user 'activer_user' as activer_user  %}
+  <h2 class="text-center">Utilisateurs</h2>
+
+  <div class="text-center">
+    <hr/>
+    <span class="form-inline">
+        <label>Filtre </label>
+        <select id="filter" class="form-control">
+            <option value="">Tous</option>
+        </select>
+    </span>
+    <hr/>
+</div>
+
+  <div class="content">
+    {% if user.is_admin  or user.isAdminInstance%}
+    {% if add_user or user.isAdminInstance %}
+      <div class="row">
+        <div class="col-lg-4" >
+          <a class="btn btn-material_success btn-large" href="{% url 'user:request_register' %}">
+            <span class="glyphicon glyphicon-plus"></span>
+            Créer un Utilisateur
+          </a>
+        </div>
+        {% hasPermission user 'load_data' as load_data %}
+        {% if load_data %}
+          <div class="col-lg-4">
+            <button id="send-btn" type="button" class="btn btn-material_success btn-large" data-toggle="modal" data-target="#loadData">
+              <span class="glyphicon glyphicon-plus"></span>
+              Charger des données
+            </button>
+          </div>
+          
+        {% endif %}
+        <br>
+        <div class="col-lg-4" style="display: flex; justify-content: flex-end; align-items: center;">
+          <a class="btn btn-primary" href="?filter={{filter}}&q={{filter}}&list_user='print'" role="button">Télécharger au format excel</a>
+        </div>
+      </div>
+      <br/>
+      {% endif %}
+    {% endif %}
+    <table class="table table-striped table-bordered" cellspacing="0" width="100%" id="datatable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Prénoms</th>
+          <th>Nom</th>
+          <th>Email</th>
+          <th>Service</th>
+          <th>Fonction</th>
+          <th>Statuts</th>
+          <th>Activer / Désactiver</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for user in all_user %}
+              <tr>
+                <td></td>
+                <td>{{ user.first_name }}</td>
+                <td>{{ user.last_name }}</td>
+                <td>{{ user.email }}</td>
+                <td class='service_filter'>{{ user.get_service }}</td>
+                <td>{{ user.get_fonction }}</td>
+                {% if user.last_login is None and user.first_name == '' and user.last_name == '' %}
+                  <td class="text-center"><span class="label label-warning">encours</span></td>
+                {% elif user.is_active  %}
+                  <td class="text-center"><span class="label label-success">actif</span></td>
+                {% else  %}
+                  <td class="text-center"><span class="label label-danger">inactif</span></td>
+                {% endif %}
+
+                {% if user.is_superuser %}
+                  <td></td>
+                {% else %}
+                  <!-- If user not super user -->
+                  {% if user.last_login is None and user.first_name == '' and user.last_name == '' %}
+                      <td class="text-center"><span class="label label-warning">encours</span></td>
+                  {% else %}
+                  <td class="text-center">
+                    {% if user.isAdminInstance == False %}
+                      {% if activer_user %}
+                          {% if user.is_active %}
+                            <a href="#" data-toggle="modal" data-target="#{{user.id}}stats"  class="btn btn-material_danger btn-small">
+                              <!-- <span class="glyphicon glyphicon-remove"></span> -->
+                                Désactiver
+                            </a>
+                          {% else %}
+                            <a href="#" data-toggle="modal" data-target="#{{user.id}}stats"  class="btn btn-material_success btn-small">
+                              <!-- <span class="glyphicon glyphicon-ok"></span> -->
+                                Activer
+                            </a>
+                          {% endif %}
+                      {% endif %}
+                    {% endif %}
+                  </td>
+                  {% endif %}
+                {% endif %}
+
+                <td>
+                  {% if view_user %}
+                    <a title="Détails" href="{% url 'user:utilisateur_details' user.id %}">
+                      <span class="glyphicon glyphicon-eye-open"></span>
+                    </a>
+                  {% endif %}
+                  {% if edit_user %}
+                    <a title="Editer" href="{% url 'user:update_utilisateur' user.id %}" >
+                      <span class="glyphicon glyphicon-edit"></span>
+                    </a>
+                  {% endif %}
+                </td>
+              </tr>
+
+              <!--Status User Modal -->
+              <div id="{{user.id}}stats" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">{% if user.is_active  %} Desactivation {% else %} Activation {% endif %}</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div>Voulez vous vraiment {% if user.is_active  %} désactiver {% else %} activer {% endif %} cet utilisateur</div>
+                    </div>
+                    <div class="modal-footer">
+                      {% if user.is_active  %}
+                        <a href="{% url 'user:statut_utilisateur' user.id %}" class="btn btn-material_danger btn-small name">Oui</a>
+                      {% else %}
+                        <a href="{% url 'user:statut_utilisateur' user.id %}" class="btn btn-material_success btn-small name">Oui</a>
+                      {% endif %}
+                      <button type="button" class="btn btn-material btn-small" data-dismiss="modal">Non</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        {% endfor %}
+        <!-- Load Data Detail Modal -->
+        <div id="loadData" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content -->
+            <form class="form-horizontal form-card" method="post" enctype="multipart/form-data" action="{% url 'user:load_data' %}">
+              <fieldset class="form-fieldset">
+                {% csrf_token %}
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Chargement Des données</h4>
+                  </div>
+                  <div class="modal-body" id="user-details">
+                    <div class="row">
+                      <div class="col s12">
+                        <div class="form-group multiple-form-group input-group">
+                            <div class="input_fields_wrap">
+                                <!-- <div><a href="#" class="add_field_button"><span class="label label-success"> Ajouter</span></a></div> -->
+                                <div><input type="file" name="dataLoaded" class="file-margin"></div>
+                            </div>                                        
+                        </div>
+                    </div>
+                    </div>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-material_success">Valider</button>
+                    <button type="button" class="btn btn-material" data-dismiss="modal">Annuler</button>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </tbody>
+    </table>
+
+    <div id="loadError" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content -->
+        
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Erreur De Chargement</h4>
+              </div>
+              <div class="modal-body" id="user-details">
+                <div class="row">
+                  <div class="col s12">
+                    <p style="color: red;">
+                      Veuillez respecter le format du fichier en vous rassurant qu'il n'y ait pas<br>
+                      de cellules vides, pas de lignes fusionnées, que chaque utilisateur est sur une seule ligne
+                    </p>
+                    {% for error in loadError %}
+                      {% if error.type == "email invalide" %}
+                        <p>
+                          Email Invalide à la ligne : <strong>{{error.line}}</strong>, colonne: <strong>{{error.culumn}}</strong>
+                        </p>
+                      {% else %}
+                        <p>
+                          Cellule Vide à la ligne : <strong>{{error.line}}</strong>, colonne: <strong>{{error.culumn}}</strong>
+                        </p>
+                      {% endif %}
+                    {%endfor%}
+                </div>
+                </div>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-material" data-dismiss="modal">Fermer</button>
+              </div>
+            </div>
+      </div>
+    </div>
+
+  </div>
+
+{% endblock %}
+{% block javascript %}
+<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+<script>
+  $(document).ready(function () {
+      
+    var t = $('#datatable').DataTable({
+      language: {
+        processing: "Traitement en cours...",
+        search: "Rechercher&nbsp;:",
+        lengthMenu: "Afficher _MENU_ &eacute;l&eacute;ments",
+        info: "Affichage de l'&eacute;l&eacute;ment _START_ &agrave; _END_ sur _TOTAL_ &eacute;l&eacute;ments",
+        infoEmpty: "Affichage de l'&eacute;l&eacute;ment 0 &agrave; 0 sur 0 &eacute;l&eacute;ments",
+        infoFiltered: "(filtr&eacute; de _MAX_ &eacute;l&eacute;ments au total)",
+        infoPostFix: "",
+        loadingRecords: "Chargement en cours...",
+        zeroRecords: "Aucun &eacute;l&eacute;ment &agrave; afficher",
+        emptyTable: "Aucune donnée disponible dans le tableau",
+        paginate: {
+          first: "Premier",
+          previous: "Pr&eacute;c&eacute;dent",
+          next: "Suivant",
+          last: "Dernier"
+        },
+        aria: {
+          sortAscending: ": activer pour trier la colonne par ordre croissant",
+          sortDescending: ": activer pour trier la colonne par ordre décroissant"
+        }
+      },
+      "columnDefs": [{
+        "searchable": false,
+        "orderable": false,
+        "targets": 0
+      }],
+      "order": [[1, 'asc']]
+    });
+
+    t.on('order.dt search.dt', function () {
+      t.column(0, { search: 'applied', order: 'applied' }).nodes().each(function (cell, i) {
+        cell.innerHTML = i + 1;
+      });
+    })
+    .draw();
+
+    // filtre dynamique par service
+    filter = $('.service_filter')
+    select = $('#filter');
+    already_added = [] ;
+
+    $.each(filter, function () {
+        service =  $(this).text();
+        console.log(service)
+        if (service) {
+          if (already_added.indexOf(service) == -1) {
+            // console.log(service);
+            select.append( $('<option value="'+service+'">'+service+'</option>') );
+            already_added.push(service);
+          }
+        }
+    });
+
+    select.on('change', function () {
+        t.columns(4).search( this.value ).draw()
+    });
+
+
+    let errors = "{{errorWhenLoad|escapejs}}";
+    console.log("ppppp");
+    console.log(errors);
+    errors = JSON.parse(errors);
+    console.log(errors);
+
+    if(errors.length > 0) {
+      $('#loadError').modal('show')
+    }
+
+  })
+
+</script>
+{% endblock %}

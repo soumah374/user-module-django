@@ -1,0 +1,332 @@
+[
+  {
+    "model": "user.Services",
+    "pk": 41,
+    "fields": {
+      "name": "Cabinet du Ministre",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 42,
+    "fields": {
+      "name": "Secrétariat Général",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 43,
+    "fields": {
+      "name": "Chef de Cabinet",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 44,
+    "fields": {
+      "name": "CONSEILLERS MMG",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 45,
+    "fields": {
+      "name": "Inspection Générale",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 46,
+    "fields": {
+      "name": "Service des Affaires Juridiques",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 47,
+    "fields": {
+      "name": "Bureau de Stratégie et de Développement (BSD)",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 48,
+    "fields": {
+      "name": "Brigade Anti-Fraude des Matières Précieuses (BAFMP)",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 49,
+    "fields": {
+      "name": "Service de Coopération et d’Investissement dans le Secteur Minier",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 410,
+    "fields": {
+      "name": "Service des Relations Communautaires et de Développement du Contenu local",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 411,
+    "fields": {
+      "name": "Service Genre et Équité (SGE)",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 412,
+    "fields": {
+      "name": "Division des Affaires Financières (DAF)",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 413,
+    "fields": {
+      "name": "Division des Ressources Humaines (DRH)",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 414,
+    "fields": {
+      "name": "Service Matériels",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 415,
+    "fields": {
+      "name": "Service Hygiène et Sécurité",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 416,
+    "fields": {
+      "name": "Direction Nationale des Mines (DNM)",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 417,
+    "fields": {
+      "name": "Centre de Promotion et de Développement Minier (CPDM)",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 418,
+    "fields": {
+      "name": "Direction Générale de Géophysique et de Sismologie",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 419,
+    "fields": {
+      "name": "Service National de Coordination des Projets Miniers (SNCPM)",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 420,
+    "fields": {
+      "name": "Office National des Géo-Services (ONGS)",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 421,
+    "fields": {
+      "name": "Bureau National d’Expertise du Diamant, Or et des Matières Précieuses (BNE)",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 422,
+    "fields": {
+      "name": "Laboratoire National de la Géologie (LNG)",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 423,
+    "fields": {
+      "name": "Société Guinéenne du Patrimoine Minier (SOGUIPAMI)",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 424,
+    "fields": {
+      "name": "Agence Nationale d’Aménagement des Infrastructures Minières (ANAIM)",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 425,
+    "fields": {
+      "name": "Fonds d’Investissement Minier (FIM)",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk":426,
+    "fields": {
+      "name": "Projet d’Appui à la Gouvernance dans le Secteur Minier (PAGSEM)",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 427,
+    "fields": {
+      "name": "Initiative pour la Transparence dans les Industries Extractives (ITIE)",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 428,
+    "fields": {
+      "name": "Secrétariat Permanent du Processus de Kimberley (SPPK)",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 429,
+    "fields": {
+      "name": "Chambre des Mines de Guinée (CMG)",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 430,
+    "fields": {
+      "name": "Secrétariat Central",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 431,
+    "fields": {
+      "name": "Direction Nationale de la Géologie (DNG)",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 432,
+    "fields": {
+      "name": "Service Archivages et Documentations",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 433,
+    "fields": {
+      "name": "Service Technique",
+
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  }
+]

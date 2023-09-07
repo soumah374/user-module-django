@@ -1,0 +1,20 @@
+{% autoescape off %}
+<p>Bonjour {{ to_send }},</p>
+<p>Une copie du courrier "{{ courrier.numero }}" vous a été envoyé.</p>
+<pre>
+	Numéro   	  		: {{ courrier.numero }}         
+	Nombre Page 		: {{ courrier.nombre_page }}    
+	Date d'envoi		: {{ courrier.date_sortie }}    
+	Expéditeur  		: {{courrier.expediteur}}       
+ 	Nom destinataire 	: {{courrier.nom_destinataire}} 
+	Objet       		: {{courrier.objet}}     		
+ 	Date Observation 	: {{courrier.dateObservation}}  
+
+<p>Vous trouverez le courrier dans la piece jointe.</p> <br/>
+
+L'equipe GEC
+</pre>
+
+Merci<br>
+{% endautoescape %}
+

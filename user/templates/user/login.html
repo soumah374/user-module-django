@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% load lookup %}
+
+{% block link %}
+{% endblock %}
+
+{% block style %}
+<style type="text/css">
+	.login_container{text-align:center;margin-top:15px}.logo{margin-bottom:1%;border:none}.logo h1,.logo h2,.logo span{padding:0;margin:0}.logo h1{font-size:25px!important;font-weight:700}.logo span{font-size:15px!important;padding-bottom:3px}.logo h2{margin:5px;text-transform:uppercase;font-size:18px!important;font-weight:700}.titre h2{margin:10px}.p-tag{margin:-10px 0 10px;font-weight:400}.form-container{background:#eee;margin:auto;margin-top:20px;margin-bottom:10px;padding:20px;width:400px;box-shadow:0 0 24px 0 rgba(0,0,0,.22),0 24px 24px 0 rgba(0,0,0,.3)}.reset_link{margin-top:10px}.reset-el,.reset-el:active,.reset-el:focus,.reset-el:hover{text-decoration:underline}.red-color{color:red}.yellow-color{color:#cccc13}.green-color{color:#61d761}label{display:none}
+	.titre{
+		font-family: 'Times New Roman', Times, serif;
+		font-weight: bold;
+	}
+</style>
+{% endblock %}
+
+{% block content %}
+	{% tpl_select 'default' as default %}
+	{% tpl_select 'custom' as custom %}
+
+	{% if user.is_authenticated == False %}
+		<div class="login_container">
+			{% if default %}
+				<div class="logo">
+					<h1>République de Guinée</h1>
+					<span><span class="red-color">Travail - </span> <span class="yellow-color">Justice</span> <span class="green-color">  - Solidarité</span></span><br>
+					<img src="{% static 'images/page-cover.png' %}" id="compagnie_id" width="58" height="65" alt="Armoirie MINES" style="margin-bottom: 5px;margin-top: 20px;">
+				</div>
+				<div class="titre">
+					<h2>GEC</h2>
+					<p class="p-tag">Gestion Electronique de Courriers</p>
+				</div>
+			{% endif %}
+
+			<div class="form-container" id="form">
+				<div>
+					{% if custom %}
+						<div class="titre">
+							<h2>GEC</h2>
+							<p class="p-tag">Gestion Electronique de Courriers</p>
+						</div>
+					{% endif %}
+					{% crispy form %}
+					<p class="text-center reset_link"><strong class="reset">mot de passe oublié <a href="{% url 'user:password_reset' %}" class="reset-el">réinitialiser</a></strong></p>
+				</div>
+			</div>
+		</div>
+	{% else %}
+		<div class="row text-center">
+			<p> Vous êtes connecté</p>
+			{% if user.is_admin %}
+				<a href="{% url 'user:utilisateurs' %}">
+					<button type="button" class="btn btn-material_success btn-large">
+							<span class="glyphicon glyphicon"></span>Utilisateurs
+					</button>
+				</a>
+			{% elif user.type_utilisateur.name == "Administrateur" %}
+				<a href="{% url 'gec:liste_courriers_entrant' 1 %}">
+					<button type="button" class="btn btn-material_success btn-large">
+							<span class="glyphicon glyphicon"></span>Mes Courriers Normaux
+					</button>
+				</a>
+			{% else %}
+				<a href="{% url 'gec:liste_courriers_entrant' 3 %}">
+					<button type="button" class="btn btn-material_success btn-large">
+						<span class="glyphicon glyphicon"></span>Mes courriers Normaux
+					</button>
+				</a>
+			{% endif %}
+
+			<a href="{% url 'user:logout' %}">
+				<button type="button" class="btn btn-material_warning btn-large">
+					<span class="glyphicon glyphicon"></span>Déconnectez vous
+				</button>
+			</a>
+		</div>
+	{% endif %}
+
+{% endblock content %}
+{% block javascript %}
+	<script>
+		alertBlock = document.getElementsByClassName("alert")
+		if (alertBlock) {
+			if (alertBlock) {
+				setTimeout(()=> {
+					alertBlock[0].style.display = "none"
+				}, 3000)
+			}
+		}
+		$(document).ready(function(){
+			$(".btn-material").removeClass('btn')
+			$(".btn-material").removeClass('btn-success')
+			$(".textInput").removeClass('form-control')
+			
+			request_url='company-name/';
+			$.ajax({
+				url:request_url,
+				success:function(data){
+					$('#company_name').html(data.name)
+					$('#compagnie_id').attr('src',`${data.logo}`)
+        }
+			})
+		})
+	</script>
+{% endblock javascript%}

@@ -1,0 +1,490 @@
+[
+    {
+        "model": "user.Fonction",
+        "pk": 11,
+        "fields": {
+            "name": "Ministre",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 12,
+        "fields": {
+            "name": "Secrétaire Général",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 13,
+        "fields": {
+            "name": "Chef de Cabinet",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 14,
+        "fields": {
+            "name": "Directeur national",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 15,
+        "fields": {
+            "name": "Directeur Général",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 16,
+        "fields": {
+            "name": "Conseillère principale",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 17,
+        "fields": {
+            "name": "Conseiller",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 18,
+        "fields": {
+            "name": "Conseiller Juridique",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 19,
+        "fields": {
+            "name": "Assistant(e)",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 110,
+        "fields": {
+            "name": "Chef Formation",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 111,
+        "fields": {
+            "name": "Chef Communication",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 112,
+        "fields": {
+            "name": "Comptable Matériel",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 113,
+        "fields": {
+            "name": "IT Help",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 114,
+        "fields": {
+            "name": "Secrétaire Exécutif de la CTSP",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 115,
+        "fields": {
+            "name": "Secrétaire Exécutif Adjoint",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 116,
+        "fields": {
+            "name": "Responsable du pôle Assistance Technique et partenariat avec les PTF",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 117,
+        "fields": {
+            "name": "Responsable du Pôle Reforme des Finances Publiques",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 118,
+        "fields": {
+            "name": "Responsable du Pôle Politiques Sectorielles",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 119,
+        "fields": {
+            "name": "Service Genre & Equité",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 120,
+        "fields": {
+            "name": "Division des Ressources Humaines",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 121,
+        "fields": {
+            "name": "Coordinateur",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 122,
+        "fields": {
+            "name": "Coordinateur Adjoint",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 123,
+        "fields": {
+            "name": "Inspecteur Général des Finances",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 124,
+        "fields": {
+            "name": "Inspecteur Général Adjoint des Finances",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 125,
+        "fields": {
+            "name": "Chef De Cellule",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 126,
+        "fields": {
+            "name": "Secretaire du Ministre",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 127,
+        "fields": {
+            "name": "Chef de Division",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 128,
+        "fields": {
+            "name": "Conseiller Stratégique",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 129,
+        "fields": {
+            "name": "Directrice Nationale",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 130,
+        "fields": {
+            "name": "Directrice Générale",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 131,
+        "fields": {
+            "name": "Coordinatrice",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    }, 
+    {
+        "model": "user.Fonction",
+        "pk": 132,
+        "fields": {
+            "name": "Coordinatrice Adjointe",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    }, 
+    {
+        "model": "user.Fonction",
+        "pk": 135,
+        "fields": {
+            "name": "Service de Communication",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 136,
+        "fields": {
+            "name": "PRMP",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 137,
+        "fields": {
+            "name": "Contrôleur Financier",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    }, 
+    {
+        "model": "user.Fonction",
+        "pk": 138,
+        "fields": {
+            "name": "Chef Matériel",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 139,
+        "fields": {
+            "name": "Consultant",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 140,
+        "fields": {
+            "name": "Chef Comptable",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    }, 
+    {
+        "model": "user.Fonction",
+        "pk": 141,
+        "fields": {
+            "name": "Directeur General",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 142,
+        "fields": {
+            "name": "Chef section",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 145,
+        "fields": {
+            "name": "Secrétaire",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 146,
+        "fields": {
+            "name": "Chef Service",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 147,
+        "fields": {
+            "name": "Secretaire Central",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 148,
+        "fields": {
+            "name": "Directeur Général Adjoint",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 149,
+        "fields": {
+            "name": "Directeur national adjoint",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 150,
+        "fields": {
+            "name": "Administarteur Instance",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 151,
+        "fields": {
+            "name": "Directrice Générale Adjointe",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Fonction",
+        "pk": 152,
+        "fields": {
+            "name": "Directrice Nationale Adjointe",
+            "instance":2,
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Company",
+        "pk": 11,
+        "fields": {
+            "name": "Application de Gestion de Courriers",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    }
+]

@@ -1,0 +1,204 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load lookup %}
+
+{% block style %}
+  <style>
+    .name:hover, .name:active,.name:focus {
+      color: #FFF;
+    }
+    .container {
+        width: 100%;
+    }
+    .modal-title {
+      text-align: center;
+      font-weight: bold;
+    }
+    a {
+      text-decoration: none !important;
+    }
+    .btn-active__style {
+      padding-left: 16px;
+      padding-right: 20px;
+    }
+    .btn-lg {
+      padding: 10px 16px;
+    }
+  </style>
+{% endblock %}
+
+{% block link %}
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" />
+{% endblock %}
+
+{% block content %}
+
+  <h2 class="text-center">Utilisateurs</h2>
+  <div class="content table-responsive">
+    {% if user.is_admin  or user.isAdminInstance%}
+      <div class="row">
+        <div class="col-lg-8" >
+          <a class="btn btn-material_success btn-large" href="{% url 'user:request_register' %}">
+            <span class="glyphicon glyphicon-plus"></span>
+            Créer un Utilisateur
+          </a>
+        </div>
+        <br>
+        <div class="col-lg-4" style="display: flex; justify-content: flex-end; align-items: center;">
+          <a class="btn btn-primary" href="?filter={{filter}}&q={{filter}}&list_user='print'" role="button">Télécharger au format excel</a>
+          </div>
+      </div>
+      <br/>
+    {% endif %}
+    <table class="table table-striped table-bordered" cellspacing="0" width="100%" id="datatable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Prénoms</th>
+          <th>Nom</th>
+          <th>Email</th>
+          <th>Service</th>
+          <th>Fonction</th>
+          <th>Responsable</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for user in all_user %}
+              <tr>
+                <td></td>
+                <td>{{ user.first_name }}</td>
+                <td>{{ user.last_name }}</td>
+                <td>{{ user.email }}</td>
+                <td class='service_filter'>{{ user.get_service }}</td>
+                <td>{{ user.get_fonction }} </td>
+                <td>
+                  {% userResponsable user as user_responsable %}
+                  {{ user_responsable }}
+                </td>
+                <td>
+                  {% if not user.chief %}
+                    <a href="#" data-toggle="modal" data-target="#{{user.id}}stats"  class="btn btn-material_success btn-small">
+                      <!-- <span class="glyphicon glyphicon-ok"></span> -->
+                      Ajouter
+                    </a>
+                    {% else %}
+                      {% if current_user.isAdminInstance or current_user.id == user.chief %}
+                        <a href="#" data-toggle="modal" data-target="#{{user.id}}stats"  class="btn btn-material_danger btn-small">
+                          <!-- <span class="glyphicon glyphicon-ok"></span> -->
+                          Rétirer
+                        </a>
+                      {% endif %}
+                  {% endif %}
+                </td>
+                 <!--Status User Modal -->
+                 <div id="{{user.id}}stats" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Ajouter comme assistant / sécretaire particulier</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div>Voulez vous 
+                        {% if user.chief %}
+                          rétirer
+                        {% else %}
+                          ajouter
+                        {% endif %}
+                          cet utilisateur comme assistant / sécretaire particulier</div>
+                      </div>
+                      <div class="modal-footer">
+                        {% if user.is_active  %}
+                          {% if admin_select %}
+                            <a href="{% url 'user:list_utilisateur_spc' user.id %}?admin={{admin_select}}" class="btn btn-material_danger btn-small name">Oui</a>
+                          {% else %}
+                            <a href="{% url 'user:list_utilisateur_spc' user.id %}" class="btn btn-material_danger btn-small name">Oui</a>
+                          {% endif %}
+                        {% else %}
+                          {% if admin_select %}
+                            <a href="{% url 'user:list_utilisateur_spc' user.id %}?admin={{admin_select}}" class="btn btn-material_success btn-small name">Oui</a>
+                          {% else %}
+                            <a href="{% url 'user:list_utilisateur_spc' user.id %}" class="btn btn-material_success btn-small name">Oui</a>
+                          {% endif %}
+                        {% endif %}
+                        <button type="button" class="btn btn-material btn-small" data-dismiss="modal">Non</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </tr>
+            
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+{% endblock %}
+{% block javascript %}
+<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+<script>
+  $(document).ready(function () {
+      
+    var t = $('#datatable').DataTable({
+      language: {
+        processing: "Traitement en cours...",
+        search: "Rechercher&nbsp;:",
+        lengthMenu: "Afficher _MENU_ &eacute;l&eacute;ments",
+        info: "Affichage de l'&eacute;l&eacute;ment _START_ &agrave; _END_ sur _TOTAL_ &eacute;l&eacute;ments",
+        infoEmpty: "Affichage de l'&eacute;l&eacute;ment 0 &agrave; 0 sur 0 &eacute;l&eacute;ments",
+        infoFiltered: "(filtr&eacute; de _MAX_ &eacute;l&eacute;ments au total)",
+        infoPostFix: "",
+        loadingRecords: "Chargement en cours...",
+        zeroRecords: "Aucun &eacute;l&eacute;ment &agrave; afficher",
+        emptyTable: "Aucune donnée disponible dans le tableau",
+        paginate: {
+          first: "Premier",
+          previous: "Pr&eacute;c&eacute;dent",
+          next: "Suivant",
+          last: "Dernier"
+        },
+        aria: {
+          sortAscending: ": activer pour trier la colonne par ordre croissant",
+          sortDescending: ": activer pour trier la colonne par ordre décroissant"
+        }
+      },
+      "columnDefs": [{
+        "searchable": false,
+        "orderable": false,
+        "targets": 0
+      }],
+      "order": [[1, 'asc']]
+    });
+
+    t.on('order.dt search.dt', function () {
+      t.column(0, { search: 'applied', order: 'applied' }).nodes().each(function (cell, i) {
+        cell.innerHTML = i + 1;
+      });
+    })
+    .draw();
+
+    // filtre dynamique par service
+    filter = $('.service_filter')
+    select = $('#filter');
+    already_added = [] ;
+
+    $.each(filter, function () {
+        service =  $(this).text();
+        if (service) {
+          if (already_added.indexOf(service) == -1) {
+            select.append( $('<option value="'+service+'">'+service+'</option>') );
+            already_added.push(service);
+          }
+        }
+    });
+
+    select.on('change', function () {
+        t.columns(4).search( this.value ).draw()
+    });
+  })
+
+</script>
+{% endblock %}

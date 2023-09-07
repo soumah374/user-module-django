@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% load permission_tags %}
+
+{% block style %}
+<style>
+    body, .body {
+		background-color: #DDD;
+    }
+    body:before {
+        display: none;
+    }
+    .btn-lg {
+		margin: 10px;
+    }
+    .navbar-inverse .navbar-nav>.active {
+        border-bottom: 7px solid #DDD;
+    }
+    .form-element {
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+    .form-radio {
+        margin-top: .75rem;
+        margin-bottom: .75rem;
+    }
+    .d-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .flex-cont {
+        width: 49%;
+        min-width: 49%;
+    }
+    .scan-view {
+        display: flex;
+        justify-content: center;
+    }
+    .DWTcontainer {
+        display: flex;
+        flex-direction: row;
+    }
+    .list-btn {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-ind {
+        width: 60px;
+        height: 50px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 4px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<form class="form-horizontal form-card" action="{% url 'user:update_utilistateur_profile' users.id %}" method="post">
+    <fieldset class="form-fieldset">
+        <legend class="form-legend">Mon profile</legend>
+        {% csrf_token %}
+        <div class="row">
+            <div class="input-field col s12 m6">
+                <input disabled type="text" name="id_number" value="{% if users.matricule %} {{users.matricule}} {% endif %}" id="id_number" >
+                <label for="id_number">Matrucule</label>
+            </div>
+            <div class="input-field col s12 m6">
+                <input type="email" id="id_email" name="email" value="{{users.email}}" required class="validate">
+                <label for="id_email">Email</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12 m6">
+                <input type="text" id="id_first_name" name="first_name" value="{{users.first_name}}" required class="validate">
+                <label for="id_first_name">Prénoms</label>
+            </div>
+            <div class="input-field col s12 m6">
+                <input type="text" id="id_last_name" name="last_name" value="{{users.last_name}}" required class="validate">
+                <label for="id_last_name">Nom</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input name="service" id="id_service" value="{{ user.service.name }}" type="text" disabled/>
+                <label for="id_service">Service</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <label for="id_fonction">Fonction</label>
+            </div><br><br>
+            <div class="input-field col s12">
+                <select class="validate" id="id_fonction" name="fonction">
+                    <option value="">-------</option>
+                    {% for fonction in fonctions %}
+                        {% if fonction.id == user.fonction.id %}
+                            <option value="{{fonction.id}}" selected>{{fonction.name}}</option>
+                        {% else %}
+                            <option value="{{fonction.id}}">{{fonction.name}}</option>
+                        {% endif %}
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12 m6">
+                <input type="text" id="id_phone" name="phone" class="validate" value="{% if users.phone %} {{users.phone}} {% endif %}">
+                <label for="id_phone">Téléphone</label>
+            </div>
+            <div class="input-field col s12 m6">
+                <input type="text" id="id_type_utilisateur" class="validate" value="{{user.type_utilisateur.name}}" disabled/>
+                <label for="id_type_utilisateur">Type Utilisateur</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12 m6">
+                <textarea name="address" id="id_address" class="validate materialize-textarea">{% if users.address %}{{users.address}}{% endif %} </textarea>
+                <label for="id_address">Adresse</label>
+            </div>
+            <div class="input-field col s12 m6">
+                <input type="email" id="id_second_email" name="second_email" value="{% if users.second_email %} {{users.second_email}} {% endif %}" class="validate">
+                <label for="id_second_email">Email Secondaire</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6">
+                <div>Genre</div>
+                {% for gender, i in genders %}
+                    {% if gender == users.genre %}
+                        <label>
+                            <input name=gender class="with-gap" type="radio" checked required value="{{gender}}" />
+                            <span>{{i}}</span>
+                        </label>
+                    {% else %}
+                        <label>
+                            <input name=gender class="with-gap" type="radio" required value="{{gender}}" />
+                            <span>{{i}}</span>
+                        </label>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        <div class="row text-center">
+            <button type="submit" class="btn btn-material_success btn-large">
+                <span class="glyphicon glyphicon-refresh"></span> Metre à jour
+            </button>
+            <a class="btn btn-material btn-large" href="javascript:history.go(-1)"><span class="glyphicon glyphicon-remove"></span> Annuler</a>
+        </div>
+    </fieldset>
+</form>
+{% endblock content %}
+{% block javascript %}
+	<script>
+        $(document).ready(function () {
+            $('#id_fonction').select2({width:"100%"});
+        })
+	</script>
+{% endblock javascript%}

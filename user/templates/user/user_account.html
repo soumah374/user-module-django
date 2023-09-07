@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block style %}
+  <style>
+    #edit {
+      color: blue;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+
+<h2 class="text-center">{% trans "Hi This is your Account." %}</h2>
+
+<div class="row">
+  <div class="col-md-5"></div>
+  <div class="col-md-5">
+    <p><strong>{% trans "Email" %}: <em>{{ user.email }}</em></strong></p>
+    <p><strong>{% trans "User Name" %}: <em>{{ user.first_name }}</em></strong></p>
+    <a href="{% url 'user:change_password' %}" class="btn btn-lg btn-success">{% trans "Change Your Password" %}</a>
+  </div>
+</div>
+
+{% endblock content %}

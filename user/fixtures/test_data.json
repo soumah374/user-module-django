@@ -1,0 +1,308 @@
+[
+	{
+		"model": "user.Utilisateur",
+		"pk": 1,
+		"fields": {
+			"is_superuser": "True",
+			"is_admin": "True",
+			"is_staff": "True",
+			"email": "admin@admin.com",
+			"first_name": "admin",
+			"last_name": "admin",
+			"service": 33,
+			"fonction": 31,
+			"type_utilisateur": 6,
+			"password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+			"created_at": "2018-07-20 07:07:07.61434+00",
+			"updated_at": "2018-07-20 07:07:07.61434+00"
+		}
+	},
+	{
+		"model": "user.Utilisateur",
+		"pk": 2,
+		"fields": {
+			"is_superuser": "False",
+			"is_admin": "False",
+			"is_staff": "False",
+			"email": "ministre@ministre.com",
+			"first_name": "Ministre",
+			"last_name": "Ministre",
+			"service": 1,
+			"fonction": 1,
+			"phone": "622 08 82 61",
+			"type_utilisateur": 1,
+			"password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+			"created_at": "2018-07-20 07:07:07.61434+00",
+			"updated_at": "2018-07-20 07:07:07.61434+00"
+		}
+	},
+	{
+		"model": "user.Utilisateur",
+		"pk": 3,
+		"fields": {
+			"is_superuser": "False",
+			"is_admin": "False",
+			"is_staff": "False",
+			"email": "sg@sg.com",
+			"first_name": "SG",
+			"last_name": "SG",
+			"service": 2,
+			"fonction": 2,
+			"phone": "628 03 33 31",
+			"type_utilisateur": 1,
+			"password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+			"created_at": "2018-07-20 07:07:07.61434+00",
+			"updated_at": "2018-07-20 07:07:07.61434+00"
+		}
+	},
+	{
+		"model": "user.Utilisateur",
+		"pk": 4,
+		"fields": {
+			"is_superuser": "False",
+			"is_admin": "False",
+			"is_staff": "False",
+			"email": "cab@cab.com",
+			"first_name": "CAB",
+			"last_name": "CAB",
+			"service": 3,
+			"fonction": 3,
+			"phone": "620 21 27 10",
+			"type_utilisateur": 1,
+			"password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+			"created_at": "2018-07-20 07:07:07.61434+00",
+			"updated_at": "2018-07-20 07:07:07.61434+00"
+		}
+	},
+	{
+		"model": "user.Utilisateur",
+		"pk": 5,
+		"fields": {
+			"is_superuser": "False",
+			"is_admin": "False",
+			"is_staff": "False",
+			"email": "secretaire@centrale.com",
+			"first_name": "Secrétaire",
+			"last_name": "Centrale",
+			"service": 30,
+			"fonction": 5,
+			"phone": "622 21 51 05",
+			"type_utilisateur": 11,
+			"password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+			"created_at": "2018-07-20 07:07:07.61434+00",
+			"updated_at": "2018-07-20 07:07:07.61434+00"
+		}
+	},
+	{
+		"model": "user.Utilisateur",
+		"pk": 6,
+		"fields": {
+			"is_superuser": "False",
+			"is_admin": "False",
+			"is_staff": "False",
+			"email": "spsg@spsg.com",
+			"first_name": "Secrétaire Particulier",
+			"last_name": "du SG",
+			"chief": 3,
+			"service": 2,
+			"fonction": 5,
+			"phone": "622 42 26 38",
+			"type_utilisateur": 4,
+			"password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+			"created_at": "2018-07-20 07:07:07.61434+00",
+			"updated_at": "2018-07-20 07:07:07.61434+00"
+		}
+	},
+	{
+		"model": "user.Utilisateur",
+		"pk": 7,
+		"fields": {
+			"is_superuser": "False",
+			"is_admin": "False",
+			"is_staff": "False",
+			"email": "spcab@spcab.com",
+			"first_name": "Secrétaire Particulier",
+			"last_name": "du CAB",
+			"chief": 4,
+			"service": 3,
+			"fonction": 5,
+			"phone": "628 27 12 10",
+			"type_utilisateur": 4,
+			"password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+			"created_at": "2018-07-20 07:07:07.61434+00",
+			"updated_at": "2018-07-20 07:07:07.61434+00"
+		}
+	},
+	{
+		"model": "user.Utilisateur",
+		"pk": 8,
+		"fields": {
+			"is_superuser": "False",
+			"is_admin": "False",
+			"is_staff": "False",
+			"email": "spministre@spministre.com",
+			"first_name": "Secrétaire Particulier",
+			"last_name": "du Ministre",
+			"chief": 2,
+			"service": 1,
+			"fonction": 5,
+			"phone": "622 67 05 72",
+			"type_utilisateur": 4,
+			"password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+			"created_at": "2018-07-20 07:07:07.61434+00",
+			"updated_at": "2018-07-20 07:07:07.61434+00"
+		}
+	},
+	{
+		"model": "user.Utilisateur",
+		"pk": 9,
+		"fields": {
+			"is_superuser": "False",
+			"is_admin": "False",
+			"is_staff": "False",
+			"email": "daf@daf.com",
+			"first_name": "DAF",
+			"last_name": "DAF",
+			"service": 12,
+			"fonction": 4,
+			"phone": "664 23 58 74",
+			"type_utilisateur": 2,
+			"password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+			"created_at": "2018-07-20 07:07:07.61434+00",
+			"updated_at": "2018-07-20 07:07:07.61434+00"
+		}
+	},
+	{
+		"model": "user.Utilisateur",
+		"pk": 10,
+		"fields": {
+			"is_superuser": "False",
+			"is_admin": "False",
+			"is_staff": "False",
+			"email": "directeur@directeur.com",
+			"first_name": "Directeur 1",
+			"last_name": "Directeur 1",
+			"service": 22,
+			"fonction": 8,
+			"phone": "664 23 58 75",
+			"type_utilisateur": 7,
+			"password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+			"created_at": "2018-07-20 07:07:07.61434+00",
+			"updated_at": "2018-07-20 07:07:07.61434+00"
+		}
+	},
+	{
+		"model": "user.Utilisateur",
+		"pk": 11,
+		"fields": {
+			"is_superuser": "False",
+			"is_admin": "False",
+			"is_staff": "False",
+			"email": "directeuradjoint@directeuradjoint.com",
+			"first_name": "Directeur",
+			"last_name": "Adjoint",
+			"service": 22,
+			"fonction": 26,
+			"phone": "664 23 58 76",
+			"type_utilisateur": 8,
+			"password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+			"created_at": "2018-07-20 07:07:07.61434+00",
+			"updated_at": "2018-07-20 07:07:07.61434+00"
+		}
+	},
+	{
+		"model": "user.Utilisateur",
+		"pk": 12,
+		"fields": {
+			"is_superuser": "False",
+			"is_admin": "False",
+			"is_staff": "False",
+			"email": "chefservice@chefservice.com",
+			"first_name": "Chef",
+			"last_name": "Service",
+			"service": 9,
+			"fonction": 19,
+			"phone": "664 23 58 77",
+			"type_utilisateur": 9,
+			"password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+			"created_at": "2018-07-20 07:07:07.61434+00",
+			"updated_at": "2018-07-20 07:07:07.61434+00"
+		}
+	},
+	{
+		"model": "user.Utilisateur",
+		"pk": 13,
+		"fields": {
+			"is_superuser": "False",
+			"is_admin": "False",
+			"is_staff": "False",
+			"email": "chefadjoint@chefadjoint.com",
+			"first_name": "Chef",
+			"last_name": "Adjoint",
+			"service": 9,
+			"fonction": 19,
+			"phone": "664 23 58 78",
+			"type_utilisateur": 10,
+			"password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+			"created_at": "2018-07-20 07:07:07.61434+00",
+			"updated_at": "2018-07-20 07:07:07.61434+00"
+		}
+	},
+	{
+		"model": "user.Utilisateur",
+		"pk": 14,
+		"fields": {
+			"is_superuser": "False",
+			"is_admin": "False",
+			"is_staff": "False",
+			"email": "agent@agent.com",
+			"first_name": "agent 1",
+			"last_name": "agent 1",
+			"service": 31,
+			"fonction": 12,
+			"phone": "664 23 58 99",
+			"type_utilisateur": 2,
+			"password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+			"created_at": "2018-07-20 07:07:07.61434+00",
+			"updated_at": "2018-07-20 07:07:07.61434+00"
+		}
+	},
+	{
+		"model": "user.Utilisateur",
+		"pk": 15,
+		"fields": {
+			"is_superuser": "False",
+			"is_admin": "False",
+			"is_staff": "False",
+			"email": "scentral@scentral.com",
+			"first_name": "Simple Secretaire",
+			"last_name": "Centrale",
+			"service": 4,
+			"fonction": 5,
+			"phone": "622 21 51 05",
+			"type_utilisateur": 3,
+			"password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+			"created_at": "2018-07-20 07:07:07.61434+00",
+			"updated_at": "2018-07-20 07:07:07.61434+00"
+		}
+	},
+	{
+		"model": "user.Utilisateur",
+		"pk": 15,
+		"fields": {
+			"is_superuser": "False",
+			"is_admin": "False",
+			"is_staff": "False",
+			"email": "archiveur@archiveur.com",
+			"first_name": "Archiveur",
+			"last_name": "Archiveur",
+			"service": 32,
+			"fonction": 78,
+			"phone": "622215105",
+			"type_utilisateur": 12,
+			"password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+			"created_at": "2018-07-20 07:07:07.61434+00",
+			"updated_at": "2018-07-20 07:07:07.61434+00"
+		}
+	}
+]

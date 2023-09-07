@@ -1,0 +1,197 @@
+{% extends 'base.html' %}
+{% load permission_tags %}
+{% load static %}
+{% load lookup %}
+
+{% block style %}
+  <style>
+    .container {
+        width: 100%;
+    }
+    .modal-title {
+      text-align: center;
+      font-weight: bold;
+    }
+    .btn-lg {
+      padding: 10px 16px;
+    }
+    #name {
+      padding: 8px 16px;
+      margin: 0 10px;
+    }
+    #name:hover, #name:active,#name:focus {
+			color: #FFF;
+		}
+  </style>
+{% endblock %}
+
+{% block link %}
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" /> 
+{% endblock %}
+
+{% block content %}
+
+  <h2 class="text-center">Structure</h2>
+
+  <div class="content">
+    <div id="{{company.id}}ViewF">
+      <div class="modal-dialog">
+        <form class="form-horizontal form-card" method="post" enctype="multipart/form-data" action="{% url 'user:update_company_info' company.id %}">
+          <fieldset class="form-fieldset">
+            {% csrf_token %}
+            <div class="row">
+              <div class="form-group col s12">
+                <label for="id_name">Categorie de la structure</label>
+                <select name="category" class="form-control">
+                  <option value="Departement" 
+                  {% if company.category == 'Departement' %}
+                    selected
+                  {% endif %}
+                    >Departement</option>
+                  <option value="Gouvernement" 
+                    {% if company.category == 'Gouvernement' %}
+                      selected
+                    {% endif %}
+                  >Gouvernement</option>
+                  <option value="Institution" 
+                    {% if company.category == 'Institution' %}
+                      selected
+                    {% endif %}
+                  >Institution</option>
+                  <option value="Direction"
+                    {% if company.category == 'Direction' %}
+                      selected
+                    {% endif %}
+                  >Direction</option>
+                </select>
+              </div>
+              <div class="input-field col s12">
+                <input type="text" value="{{company.name}}" name="name" id="id_name">
+                <label for="id_name">Intitulé de la Structure</label>
+              </div>
+              <div class="input-field col s12">
+                <input type="text" value="{{company.sigle}}" name="sigle" id="id_sigle">
+                <label for="id_sigle">Sigle</label>
+              </div> 
+              <div class="input-field col s12">
+                <input type="file" name="logo" id="id_logo" accept=".jpeg, .jpg, .png, .JPEG, .JPG, .PNG">
+                {% comment %} <label for="id_sigle">Logo</label> {% endcomment %}
+              </div>  
+              <div class="input-field col s12">
+                <p class="text-muted">Est il un departement ministriel</p>
+                <p>
+                  <label>
+                    <input name="type" type="radio" 
+                    {% if company.type == "oui" %}
+                      checked
+                    {% endif %}
+                        value="oui" />
+                    <span>Oui</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input name="type" type="radio" value="non" 
+                        {% if company.type == "non" %}
+                          checked
+                        {% endif %}
+                        />
+                    <span>Non</span>
+                  </label>
+                </p>
+              </div> 
+              <div class="input-field col s12">
+                <img src="{% static 'images/' %}{{company.logo}}" alt="logo" width="20%" class="img img-responsive"/> 
+              </div>
+              <hr/>
+              
+              <div class="row">
+                <div class="col-12">
+                  <a href="{% url 'user:companies_configuration_assignation' %}" class="btn btn-primary">
+                    Annotation
+                  </a>
+                </div>
+              </div>
+              <br/>
+             
+            </div>
+            <button type="submit" class="btn btn-material_success btn-small">Mise à jour</button>
+            <a href="{% url 'user:utilisateurs' %}" class="btn btn-material btn-small" data-dismiss="modal">Annuler</a>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+{% block javascript %}
+<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+<script>
+  $(document).ready(function () {
+      $('#datatable').DataTable({
+        language: {
+          processing: "Traitement en cours...",
+          search: "Rechercher&nbsp;:",
+          lengthMenu: "Afficher _MENU_ &eacute;l&eacute;ments",
+          info: "Affichage de l'&eacute;l&eacute;ment _START_ &agrave; _END_ sur _TOTAL_ &eacute;l&eacute;ments",
+          infoEmpty: "Affichage de l'&eacute;l&eacute;ment 0 &agrave; 0 sur 0 &eacute;l&eacute;ments",
+          infoFiltered: "(filtr&eacute; de _MAX_ &eacute;l&eacute;ments au total)",
+          infoPostFix: "",
+          loadingRecords: "Chargement en cours...",
+          zeroRecords: "Aucun &eacute;l&eacute;ment &agrave; afficher",
+          emptyTable: "Aucune donnée disponible dans le tableau",
+          paginate: {
+            first: "Premier",
+            previous: "Pr&eacute;c&eacute;dent",
+            next: "Suivant",
+            last: "Dernier"
+          },
+          aria: {
+            sortAscending: ": activer pour trier la colonne par ordre croissant",
+            sortDescending: ": activer pour trier la colonne par ordre décroissant"
+          }
+        },
+        bRetrieve: true
+      })
+        .order([5, 'asc'])
+        .draw();
+    })
+    var t = $('#datatable').DataTable({
+      language: {
+        processing: "Traitement en cours...",
+        search: "Rechercher&nbsp;:",
+        lengthMenu: "Afficher _MENU_ &eacute;l&eacute;ments",
+        info: "Affichage de l'&eacute;l&eacute;ment _START_ &agrave; _END_ sur _TOTAL_ &eacute;l&eacute;ments",
+        infoEmpty: "Affichage de l'&eacute;l&eacute;ment 0 &agrave; 0 sur 0 &eacute;l&eacute;ments",
+        infoFiltered: "(filtr&eacute; de _MAX_ &eacute;l&eacute;ments au total)",
+        infoPostFix: "",
+        loadingRecords: "Chargement en cours...",
+        zeroRecords: "Aucun &eacute;l&eacute;ment &agrave; afficher",
+        emptyTable: "Aucune donnée disponible dans le tableau",
+        paginate: {
+          first: "Premier",
+          previous: "Pr&eacute;c&eacute;dent",
+          next: "Suivant",
+          last: "Dernier"
+        },
+        aria: {
+          sortAscending: ": activer pour trier la colonne par ordre croissant",
+          sortDescending: ": activer pour trier la colonne par ordre décroissant"
+        }
+      },
+      "columnDefs": [{
+        "searchable": false,
+        "orderable": false,
+        "targets": 0
+      }],
+      "order": [[1, 'asc']]
+    });
+
+    t.on('order.dt search.dt', function () {
+      t.column(0, { search: 'applied', order: 'applied' }).nodes().each(function (cell, i) {
+        cell.innerHTML = i + 1;
+      });
+    }).draw();
+</script>
+{% endblock %}

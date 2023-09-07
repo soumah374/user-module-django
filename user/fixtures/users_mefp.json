@@ -1,0 +1,1525 @@
+[
+  {
+    "model": "user.Utilisateur",
+    "pk": 11,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "True",
+      "isAdminInstance":"True",
+      "email": "admin@mefp.com",
+      "first_name": "admin",
+      "last_name": "admin",
+      "service": 154,
+      "fonction": 150,
+      "type_utilisateur": 114,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 12,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "ministre@mefp.gov.gn",
+      "first_name": "Lancine",
+      "last_name": "Conde",
+      "service": 11,
+      "fonction": 11,
+      "type_utilisateur": 11,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 13,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "sg@mefp.gov.gn",
+      "first_name": "Abdoulaye",
+      "last_name": "Touré",
+      "service": 12,
+      "fonction": 12,
+      "type_utilisateur": 11,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 14,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "chefcab@mefp.gov.gn",
+      "first_name": "Morlaye",
+      "last_name": "Soumah",
+      "service": 170,
+      "fonction": 13,
+      "type_utilisateur": 11,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 15,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dncf@mefp.gov.gn",
+      "first_name": "Mamdou Gando",
+      "last_name": "Bah",
+      "service": 119,
+      "fonction": 14,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 17,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dnip@mefp.gov.gn",
+      "first_name": "Ibrahima Sory",
+      "last_name": "Camara",
+      "service": 120,
+      "fonction": 14,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 16,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dndapd@mefp.gov.gn",
+      "first_name": "Thierno Ibrahima",
+      "last_name": "Bah",
+      "service": 14,
+      "fonction": 14,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 18,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dgpeip@mefp.gov.gn",
+      "first_name": "Sekou",
+      "last_name": "Kandé",
+      "service": 124,
+      "fonction": 15,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 19,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dgtcp@mefp.gov.gn",
+      "first_name": "Mourana",
+      "last_name": "Soumah",
+      "service": 125,
+      "fonction": 15,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 110,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dgatcp@mefp.gov.gn",
+      "first_name": "Lancinè",
+      "last_name": "Kakoro",
+      "service": 125,
+      "fonction": 148,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 111,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "conseiller.principal@mefp.gov.gn",
+      "first_name": "Mme Émilie Bernardette",
+      "last_name": "Leno",
+      "service": 11,
+      "fonction": 16,
+      "type_utilisateur": 12,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 112,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "cpem@mefp.gov.gn",
+      "first_name": "M. Pema",
+      "last_name": "Guilavogui",
+      "service": 142,
+      "fonction": 17,
+      "type_utilisateur": 12,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 113,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "cipd@mefp.gov.gn",
+      "first_name": "Gnouma Mamadou",
+      "last_name": "Doumbouya",
+      "service": 11,
+      "fonction": 17,
+      "type_utilisateur": 12,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 114,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "conseiller.juridique@mefp.gov.gn",
+      "first_name": "Elhadj Mamadou Cellou",
+      "last_name": "Diallo",
+      "service": 11,
+      "fonction": 18,
+      "type_utilisateur": 12,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 115,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "cfp@mefp.gov.gn",
+      "first_name": "Lamine",
+      "last_name": "Camara",
+      "service": 126,
+      "fonction": 17,
+      "type_utilisateur": 12,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 116,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "sory.keita@mefp.gov.gn",
+      "first_name": "Sory",
+      "last_name": "Keita",
+      "service": 11,
+      "fonction": 19,
+      "type_utilisateur": 12,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 117,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "kadiatou.sow@mefp.gov.gn",
+      "first_name": "Kadiatou",
+      "last_name": "Sow",
+      "service": 11,
+      "fonction": 19,
+      "type_utilisateur": 12,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 118,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "nabila.houballah@mefp.gov.gn",
+      "first_name": "Nabila",
+      "last_name": "houballah",
+      "service": 12,
+      "fonction": 19,
+      "type_utilisateur": 14,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 119,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "chefformation@mefp.gov.gn",
+      "first_name": "Mohamed",
+      "last_name": "Marega",
+      "service": "155",
+      "fonction": 110,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 120,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "chefcommunication@mefp.gov.gn",
+      "first_name": "Mariam",
+      "last_name": "Camara",
+      "service": 111,
+      "fonction": 111,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 121,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "Comptablemat.finances@mefp.gov.gn",
+      "first_name": "Daouda",
+      "last_name": "Cissé",
+      "service": 156,
+      "fonction": 112,
+      "type_utilisateur": 12,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 122,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "mohamedlamine.toure@mefp.gov.gn",
+      "first_name": "Mohamed Lamine",
+      "last_name": "Toure",
+      "service": 154,
+      "fonction": 113,
+      "phone": "621 88 78 01",
+      "type_utilisateur": 12,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 123,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "se.ctsp@mefp.gov.gn",
+      "first_name": "Sidi Mouctar",
+      "last_name": "Dicko",
+      "fonction": 114,
+      "service": 153,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 124,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "sea.ctsp@mefp.gov.gn",
+      "first_name": "Mamady",
+      "last_name": "Koulibaly",
+      "service": 153,
+      "fonction": 115,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 125,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "ptf.ctsp@mefp.gov.gn",
+      "first_name": "Momo",
+      "last_name": "Touré",
+      "service": 153,
+      "fonction": 116,
+      "type_utilisateur": 12,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 126,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "ps.ctsp@mefp.gov.gn",
+      "first_name": "Idrissa",
+      "last_name": "Kaba",
+      "service": 153,
+      "fonction": 118,
+      "type_utilisateur": 12,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 127,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "chefsge.finances@mefp.gov.gn",
+      "first_name": "Bountouraby",
+      "last_name": "Soumah",
+      "service": 113,
+      "fonction": 119,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 128,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "drh.finances@mefp.gov.gn",
+      "first_name": "Toromba",
+      "last_name": "Doumbouya",
+      "service": 16,
+      "fonction": 120,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 129,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dneep@mefp.gov.gn",
+      "first_name": "Abdoulaye Ibrahima",
+      "last_name": "Diallo",
+      "service": 121,
+      "fonction": 149,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 130,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dgapeip@mefp.gov.gn",
+      "first_name": "Aissata",
+      "last_name": "Soumah",
+      "service": 124,
+      "fonction": 151,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 131,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "fsi@mefp.gov.gn",
+      "first_name": "Alain Cécé",
+      "last_name": "camara",
+      "service": 17,
+      "fonction": 121,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 132,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "fsia@mefp.gov.gn",
+      "first_name": "Saliou",
+      "last_name": "Kalissa",
+      "service": 17,
+      "fonction": 122,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 133,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "igf@mefp.gov.gn",
+      "first_name": "Jean Joseph",
+      "last_name": "Gomez",
+      "service": 13,
+      "fonction": 123,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 134,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "igaf@mefp.gov.gn",
+      "first_name": "Mamadou",
+      "last_name": "Balde",
+      "service": 13,
+      "fonction": 124,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 135,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "centif@mefp.gov.gn",
+      "first_name": "Koly",
+      "last_name": "Mara",
+      "service": 157,
+      "fonction": 125,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 136,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dnacmp@mefp.gov.gn",
+      "first_name": "Kabinet",
+      "last_name": "Traoré",
+      "service": 117,
+      "fonction": 149,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 137,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dnacf@mefp.gov.gn",
+      "first_name": "Delphine Binet",
+      "last_name": "Doré",
+      "service": 119,
+      "fonction": 152,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 138,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "secretariat.ministre@mefp.gov.gn",
+      "first_name": "Mariame",
+      "last_name": "Cisse",
+      "chief": 12,
+      "service": 11,
+      "fonction": 126,
+      "type_utilisateur": 14,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 139,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "ac.dneep@mefp.gov.gn",
+      "first_name": "Mohamed",
+      "last_name": "Fadiga",
+      "service": 158,
+      "fonction": 127,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 140,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "ee.dneep@mefp.gov.gn",
+      "service": 159,
+      "first_name": "Mohamed",
+      "last_name": "Camara",
+      "fonction": 127,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 141,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dnaip@mefp.gov.gn",
+      "first_name": "Oumar",
+      "last_name": "Barry",
+      "service": 120,
+      "fonction": 149,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 142,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dncmp@mefp.gov.gn",
+      "first_name": "Mohamed",
+      "last_name": "Diallo",
+      "service": 117,
+      "fonction": 14,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 143,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "conseiller.strategique@mefp.gov.gn",
+      "first_name": "Sylvain",
+      "last_name": "Degbé",
+      "service": 11,
+      "fonction": 128,
+      "type_utilisateur": 12,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 144,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "die.dnip@mefp.gov.gn",
+      "first_name": "Mamadou Bailo",
+      "last_name": "Diallo",
+      "service": 160,
+      "fonction": 127,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 145,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "deemis.dnip@mefp.gov.gn",
+      "first_name": "Ibrahima",
+      "last_name": "Barry",
+      "service": 161,
+      "fonction": 127,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 146,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dssa.dnip@mefp.gov.gn",
+      "first_name": "Aboubacar",
+      "last_name": "Kourouma",
+      "service": 162,
+      "fonction": 127,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 147,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "ddre.dnip@mefp.gov.gn",
+      "first_name": "Dalanda Telly",
+      "last_name": "Drame",
+      "service": 163,
+      "fonction": 127,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 148,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dpb.dnip@mefp.gov.gn",
+      "first_name": "Ibrahima Sory",
+      "last_name": "CAMARA",
+      "service": 164,
+      "fonction": 127,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 149,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dse.dnip@mefp.gov.gn",
+      "first_name": "Manga Mory",
+      "last_name": "Sylla",
+      "service": 165,
+      "fonction": 127,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 150,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dnper@mefp.gov.gn",
+      "first_name": "Hassane",
+      "last_name": "Diallo",
+      "service": 122,
+      "fonction": 14,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 151,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dnapp@mefp.gov.gn",
+      "first_name": "Abdoulaye",
+      "last_name": "Fofana",
+      "service": 122,
+      "fonction": 149,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 152,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dnpd@mefp.gov.gn",
+      "first_name": "Mohamed",
+      "last_name": "Sano",
+      "service": 123,
+      "fonction": 14,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 153,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dnapd@mefp.gov.gn",
+      "first_name": "Mamadou Dian Dilé",
+      "last_name": "Diallo",
+      "service": 123,
+      "fonction": 149,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 155,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dgfdes@mefp.gov.gn",
+      "first_name": "Daouda",
+      "last_name": "Kanté",
+      "service": 152,
+      "fonction": 15,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 156,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dgafdes@mefp.gov.gn",
+      "first_name": "Mamadou Bobo",
+      "last_name": "Diallo",
+      "service": 152,
+      "fonction": 148,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 157,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dgins@mefp.gov.gn",
+      "first_name": "Makan",
+      "last_name": "Doumbouya",
+      "service": 151,
+      "fonction": 15,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 158,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dgains@mefp.gov.gn",
+      "first_name": "Mamadou",
+      "last_name": "Camara",
+      "service": 151,
+      "fonction": 148,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 159,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dgondrg@mefp.gov.gn",
+      "first_name": "Bangaly",
+      "last_name": "Kamano",
+      "service": 150,
+      "fonction": 15,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 160,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dgaondrg@mefp.gov.gn",
+      "service": 150,
+      "fonction": 151,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 161,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "cppd@mefp.gov.gn",
+      "first_name": "Mariame",
+      "last_name": "Sidibé",
+      "service": 149,
+      "fonction": 131,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 162,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "cucep@mefp.gov.gn",
+      "first_name": "Abdoulaye Wansan",
+      "last_name": "BAH",
+      "service": 148,
+      "fonction": 121,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 163,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "sge@mefp.gov.gn",
+      "first_name": "Edith",
+      "last_name": "Maka",
+      "service": 113,
+      "fonction": 119,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 164,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "drh.plan@mefp.gov.gn",
+      "first_name": "Hénan",
+      "last_name": "Camara",
+      "service": 16,
+      "fonction": 120,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 165,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "servicecomrp@mefp.gov.gn",
+      "first_name": "Saliou",
+      "last_name": "Akin",
+      "service": 111,
+      "fonction": 135,
+      "type_utilisateur": 12,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 166,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "prmp.plan@mefp.gov.gn",
+      "first_name": "Issiaga",
+      "service": 166,
+      "last_name": "Touré",
+      "fonction": 136,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 167,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "controleurfinancier.plan@mefp.gov.gn",
+      "first_name": "Marly",
+      "last_name": "Diallo",
+      "service": 119,
+      "fonction": 137,
+      "type_utilisateur": 12,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 168,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "comptablemat.plan@mefp.gov.gn",
+      "first_name": "Dandaye",
+      "last_name": "Sankhon",
+      "service": 156,
+      "fonction": 138,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 169,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "ibrahimaahmed.barry@mefp.gov.gn",
+      "first_name": "Ibrahima Ahmed",
+      "last_name": "BARRY",
+      "service": 11,
+      "fonction": 139,
+      "type_utilisateur": 12,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 170,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "chefcomptable.plan@mefp.gov.gn",
+      "first_name": "Ibrahima",
+      "last_name": "Sidibe",
+      "service": 167,
+      "fonction": 140,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 171,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dgsigpip@mefp.gov.gn",
+      "first_name": "Ousmane",
+      "last_name": "BARRY",
+      "service": 168,
+      "fonction": 127,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 172,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "finex.dnip@mefp.gov.gn",
+      "first_name": "Mamadou",
+      "last_name": "Tounkara",
+      "service": 169,
+      "fonction": 142,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 173,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "assistant.sg@mefp.gov.gn",
+      "first_name": "Adourahamane",
+      "last_name": "DIALLO",
+      "service": 12,
+      "fonction": 19,
+      "type_utilisateur": 12,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 174,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "daf@mefp.gov.gn",
+      "first_name": "Stephane Ouya",
+      "last_name": "Zoumanigui",
+      "service": 15,
+      "fonction": 127,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 175,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "cuppp@mefp.gov.gn",
+      "first_name": "Mamadou Dian",
+      "last_name": "BAH",
+      "service": 128,
+      "fonction": 121,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 176,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "dnadapd@mefp.gov.gn",
+      "first_name": "Hamzata",
+      "last_name": "Diakité",
+      "service": 118,
+      "fonction": 149,
+      "type_utilisateur": 17,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 177,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "csa.dndapd@mefp.gov.gn",
+      "first_name": "koikoi",
+      "last_name": "koivogui",
+      "service": 147,
+      "fonction": 146,
+      "type_utilisateur": 19,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 178,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "sc@mefp.gov.gn",
+      "first_name": "Secretaire",
+      "last_name": "Central(e)",
+      "service": 116,
+      "fonction": 145,
+      "type_utilisateur": 111,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 179,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "rfp.ctsp@mefp.gov.gn",
+      "first_name": "Mohamed Lamine",
+      "last_name": "Sylla",
+      "service": 153,
+      "fonction": 117,
+      "type_utilisateur": 12,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 180,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "condehabiba@gmail.com",
+      "first_name": "Habibatou",
+      "last_name": "Conde",
+      "chief": 13,
+      "service": 12,
+      "fonction": 126,
+      "type_utilisateur": 14,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Utilisateur",
+    "pk": 181,
+    "fields": {
+      "is_superuser": "False",
+      "is_admin": "False",
+      "is_staff": "False",
+      "email": "secretariat.chefcab@mefp.gov.gn",
+      "first_name": "Mawa Julio ",
+      "last_name": "Camara",
+      "chief": 14,
+      "service": 170,
+      "fonction": 126,
+      "type_utilisateur": 14,
+      "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+      "instance": 2,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  }
+]

@@ -1,0 +1,290 @@
+[
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 1,
+        "fields": {
+            "name": "Presidence",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 2,
+        "fields": {
+            "name": "Primature",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 3,
+        "fields": {
+            "name": "Minist\u00e8re des Postes Telecommmunication et de \nl'Economie Numerique",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 4,
+        "fields": {
+            "name": "Minist\u00e8re de l'Economie, des Finances et du Plan ",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 5,
+        "fields": {
+            "name": "Minist\u00e8re de la D\u00e9fense Nationale",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 6,
+        "fields": {
+            "name": "Garde des Sceaux, Minist\u00e8re de la Justice et des \nDroits de l'Homme",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 7,
+        "fields": {
+            "name": "Minist\u00e8re des Affaires \u00c9trang\u00e8res, de la Coop\u00e9ration \nInternationale, de l'Int\u00e9gration Africaine et des \nGuin\u00e9ens de l'\u00c9tranger",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 8,
+        "fields": {
+            "name": "Minist\u00e8re de l'Administration du Territoire et de la \nD\u00e9centralisation",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 9,
+        "fields": {
+            "name": "Minist\u00e8re de la S\u00e9curit\u00e9 et de la Protection Civile",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 10,
+        "fields": {
+            "name": "Minist\u00e8re du Budget",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 11,
+        "fields": {
+            "name": "Minist\u00e8re de l'Agriculture et de l'\u00c9levage",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 12,
+        "fields": {
+            "name": "Minist\u00e8re de la Sant\u00e9 et de l'Hygi\u00e8ne Publique",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 13,
+        "fields": {
+            "name": "Minist\u00e8re de l'Enseignement Technique et de la \nFormation Professionnelle",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 14,
+        "fields": {
+            "name": "Minist\u00e8re de la Culture, du Tourisme et de \nl'Artisanat",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 15,
+        "fields": {
+            "name": "Minist\u00e8re des Infrastructures et des Transports",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 16,
+        "fields": {
+            "name": "Minist\u00e8re de l'Environnement et du \nD\u00e9veloppement Durable",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 17,
+        "fields": {
+            "name": "Minist\u00e8re de l'Enseignement Sup\u00e9rieur, de la \nRecherche Scientifique et de l'Innovation",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 18,
+        "fields": {
+            "name": "Minist\u00e8re des Mines et de la G\u00e9ologie",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 19,
+        "fields": {
+            "name": "Minist\u00e8re de l\u2019Urbanisme, de l'Habitat et de l'Am\u00e9nagement du Territoire",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 20,
+        "fields": {
+            "name": "Minist\u00e8re de la Jeunesse et des Sports",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 21,
+        "fields": {
+            "name": "Minist\u00e8re du Travail et de la Fonction Publique",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 22,
+        "fields": {
+            "name": "Minist\u00e8re du Commerce, de l'Industrie et des \nPetites et Moyennes Entreprises",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 23,
+        "fields": {
+            "name": "Minist\u00e8re de la Promotion F\u00e9minine, de \nl'Enfance et des Personnes Vuln\u00e9rables",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 24,
+        "fields": {
+            "name": "Minist\u00e8re de l'Enseignement Pr\u00e9-Universitaire et \nde l'Alphab\u00e9tisation",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 25,
+        "fields": {
+            "name": "Minist\u00e8re de la P\u00eache et de l'\u00c9conomie Maritime",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 26,
+        "fields": {
+            "name": "Minist\u00e8re de l'\u00c9nergie, de l'Hydraulique et des \nHydrocarbures",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 27,
+        "fields": {
+            "name": "Secr\u00e9tarait G\u00e9n\u00e9ral du Gouvernement",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 28,
+        "fields": {
+            "name": "Secr\u00e9tariat G\u00e9n\u00e9ral des Affaires \nReligieuses",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 29,
+        "fields": {
+            "name": "Minist\u00e8re de l'Information et de la Communication",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 30,
+        "fields": {
+            "name": "Banque Centrale",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 31,
+        "fields": {
+            "name": "Agence Nationale de Digitalisation de l'Etat",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "gec.ExpediteurDestinataire",
+        "pk": 32,
+        "fields": {
+            "name": "Administration et Contr\u00f4le des Grands Projets ",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    }
+]

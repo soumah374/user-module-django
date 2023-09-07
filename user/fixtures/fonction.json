@@ -1,0 +1,811 @@
+[
+  {
+    "model": "user.Fonction",
+    "pk": 1,
+    "fields": {
+      "name": "Ministre",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 42,
+    "fields": {
+      "name": "Secrétaire Général",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 43,
+    "fields": {
+      "name": "Chef de Cabinet",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 44,
+    "fields": {
+      "name": "Directeur Général DAF",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 45,
+    "fields": {
+      "name": "Secrétaire",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 46,
+    "fields": {
+      "name": "Assistant spécial du Ministre",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 47,
+    "fields": {
+      "name": "Attaché de Cabinet MMG",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 48,
+    "fields": {
+      "name": "Assistant MMG",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 49,
+    "fields": {
+      "name": "Assistant Principal CC",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 410,
+    "fields": {
+      "name": "Assistant(e) CC",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 411,
+    "fields": {
+      "name": "Conseiller Principal",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 412,
+    "fields": {
+      "name": "Conseiller chargé des questions d’infrastructures",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 413,
+    "fields": {
+      "name": "Conseiller économique et fiscal",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 414,
+    "fields": {
+      "name": "Conseillère chargée des questions techniques",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 415,
+    "fields": {
+      "name": "Conseiller chargé de mission",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 416,
+    "fields": {
+      "name": "Assistant SG",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 417,
+    "fields": {
+      "name": "Inspecteur Général",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 418,
+    "fields": {
+      "name": "Inspecteur Général Adjoint",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 419,
+    "fields": {
+      "name": "Inspecteur",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 420,
+    "fields": {
+      "name": "Chef de cellule de suivi et de contrôle",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 421,
+    "fields": {
+      "name": "Directeur Général SAJ",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 422,
+    "fields": {
+      "name": "Directeur Général Adjoint SAJ",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 423,
+    "fields": {
+      "name": "Chargé d’étude SAJ",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 424,
+    "fields": {
+      "name": "Stagiaire",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 425,
+    "fields": {
+      "name": "Directeur Général BSD",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 426,
+    "fields": {
+      "name": "Directeur Général Adjoint BSD",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 427,
+    "fields": {
+      "name": "Chargé d’étude BSD",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 428,
+    "fields": {
+      "name": "Directeur Général BAFMP",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 429,
+    "fields": {
+      "name": "Directeur Général Adjoint BAFMP",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 430,
+    "fields": {
+      "name": "Directeur Général SRCDCL",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 431,
+    "fields": {
+      "name": "Directeur Général Adjoint SRCDCL",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 432,
+    "fields": {
+      "name": "Chef de Département Contenu Local",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 433,
+    "fields": {
+      "name": "Chef de Département Relations Communautaires",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 434,
+    "fields": {
+      "name": "Chef de Département Droits Humains",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 435,
+    "fields": {
+      "name": "Chef de Service SGE",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 436,
+    "fields": {
+      "name": "Contrôleur Financier DAF",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 437,
+    "fields": {
+      "name": "Chef Comptable DAF",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 438,
+    "fields": {
+      "name": "Chef de Division DRH",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 439,
+    "fields": {
+      "name": "Assistant DRH",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 440,
+    "fields": {
+      "name": "Chef de Service SM",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 441,
+    "fields": {
+      "name": "Assistant SM",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 442,
+    "fields": {
+      "name": "Chef Service SHS",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 443,
+    "fields": {
+      "name": "Directeur National DNM",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 444,
+    "fields": {
+      "name": "Directeur National Adjoint DNM",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 445,
+    "fields": {
+      "name": "Directeur National DNG",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 446,
+    "fields": {
+      "name": "Directeur National Adjoint DNG",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 447,
+    "fields": {
+      "name": "Directeur National CPDM",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 448,
+    "fields": {
+      "name": "Directeur National Adjoint CPDM",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 449,
+    "fields": {
+      "name": "Chargé d’étude CPDM",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 450,
+    "fields": {
+      "name": "Directeur National DGGS",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 451,
+    "fields": {
+      "name": "Directeur National Adjoint DGGS",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 452,
+    "fields": {
+      "name": "Directrice Nationale SNCPM",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 453,
+    "fields": {
+      "name": "Directeur National Adjoint SNCPM",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 454,
+    "fields": {
+      "name": "Directrice Nationale ONGS",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 455,
+    "fields": {
+      "name": "Directeur National Adjoint ONGS",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 456,
+    "fields": {
+      "name": "Chef Service SAF",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 457,
+    "fields": {
+      "name": "Directrice Nationale BNE",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 458,
+    "fields": {
+      "name": "Directeur National Adjoint BNE",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 459,
+    "fields": {
+      "name": "Directeur National LNG",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 460,
+    "fields": {
+      "name": "Directeur National Adjoint LNG",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 461,
+    "fields": {
+      "name": "Administrateur Général SOGUIPAMI",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 462,
+    "fields": {
+      "name": "Administrateur Général Adjoint SOGUIPAMI",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 463,
+    "fields": {
+      "name": "Coordinateur de l’Unité de Sud Simandou SOGUIPAMI",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 464,
+    "fields": {
+      "name": "Directeur Général ANAIM",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 465,
+    "fields": {
+      "name": "Directeur Général Adjoint ANAIM",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 466,
+    "fields": {
+      "name": "Conseiller Juridique ANAIM",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 467,
+    "fields": {
+      "name": "Directeur Général FIM",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 468,
+    "fields": {
+      "name": "Directeur Général Adjoint FIM",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 469,
+    "fields": {
+      "name": "Coordinateur National PAGSEM",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 470,
+    "fields": {
+      "name": "Spécialiste en Gestion Financière PAGSEM",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 471,
+    "fields": {
+      "name": "Spécialiste en Passation de Marchés PAGSEM",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 472,
+    "fields": {
+      "name": "Secrétaire Exécutif ITIE",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 473,
+    "fields": {
+      "name": "Responsable de communication ITIE",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 474,
+    "fields": {
+      "name": "Secrétaire Permanente SPPK",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 475,
+    "fields": {
+      "name": "Directeur Général SCISM",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 476,
+    "fields": {
+      "name": "Directeur Général Adjoint SCISM",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 477,
+    "fields": {
+      "name": "Directeur Exécutif CMG",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 478,
+    "fields": {
+      "name": "Chef Service Archives et Documentations",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 479,
+    "fields": {
+      "name": "Chargé d’Études",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Fonction",
+    "pk": 480,
+    "fields": {
+      "name": "Maintenancier",
+     
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Company",
+    "pk": 1,
+    "fields": {
+      "name": "Application de Gestion de Courriers",
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  }
+]

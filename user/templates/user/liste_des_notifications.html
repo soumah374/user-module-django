@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load humanize %}
+
+{% block style %}
+  <style>
+    .container {
+        width: 100%;
+    }
+    .unread {
+      background-color: #f1efef;
+    }
+  </style>
+{% endblock %}
+
+{% block link %}
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" />
+{% endblock %}
+
+{% block content %}
+
+    <h2 class="text-center">Notifications</h2>
+    {% if notifications_obj %}
+      <div class="content">
+          <table class="table table-bordered" cellspacing="0" width="100%" id="datatable">
+              <thead>
+                  <tr>
+                      <th>#</th>
+                      <th>Description</th>
+                      <th>Action</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  {% for notification in notifications_obj %}
+                      <tr class="{% if notification.unread %} unread {% endif %}">
+                          <td></td>
+                          <td>
+                              <strong>{{notification.actor}}</strong> {{notification.verb}} <strong>{{notification.action_object}}</strong>{% if notification.target %} au <strong>{{notification.target}}</strong> {% endif %}<small class='text-warning'> {{notification.timestamp|naturaltime}}</small>
+                          </td>
+                          <td>
+                              {% if notification.deleted %}
+                                <a title="Détails" href="#">
+                                    <span> - </span>
+                                </a>
+                              {% elif notification.description == '1' %}
+                                <a title="Détails" href="/details-d-un-courrier/{{notification.action_object_object_id}}/1">
+                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                </a>
+                              {% elif notification.description == '2' %}
+                                <a title="Détails" href="/details-d-un-courrier/{{notification.action_object_object_id}}/2">
+                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                </a>
+                              {% elif notification.description == '3' %}
+                                <a title="Détails" href="/details-d-un-courrier/{{notification.action_object_object_id}}/3">
+                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                </a>
+                              {% elif notification.description == '4' %}
+                                <a title="Détails" href="/details-d-un-courrier/{{notification.action_object_object_id}}/4">
+                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                </a>
+                              {% elif notification.description == '5' %}
+                                <a title="Détails" href="/details-archive/{{notification.action_object_object_id}}/5">
+                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                </a>
+                              {% elif notification.description == '6' %}
+                                <a title="Détails" href="/details-archive/{{notification.action_object_object_id}}/6">
+                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                </a>
+                              {% else %}
+                                -
+                              {% endif %}
+                          </td>
+                      </tr>
+                  {% endfor %}
+              </tbody>
+          </table>
+      </div>
+    {% endif %}
+
+{% endblock %}
+{% block javascript %}
+<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+<script>
+  $(document).ready(function () {
+      $('#datatable').DataTable({
+        language: {
+          processing: "Traitement en cours...",
+          search: "Rechercher&nbsp;:",
+          lengthMenu: "Afficher _MENU_ &eacute;l&eacute;ments",
+          info: "Affichage de l'&eacute;l&eacute;ment _START_ &agrave; _END_ sur _TOTAL_ &eacute;l&eacute;ments",
+          infoEmpty: "Affichage de l'&eacute;l&eacute;ment 0 &agrave; 0 sur 0 &eacute;l&eacute;ments",
+          infoFiltered: "(filtr&eacute; de _MAX_ &eacute;l&eacute;ments au total)",
+          infoPostFix: "",
+          loadingRecords: "Chargement en cours...",
+          zeroRecords: "Aucun &eacute;l&eacute;ment &agrave; afficher",
+          emptyTable: "Aucune donnée disponible dans le tableau",
+          paginate: {
+            first: "Premier",
+            previous: "Pr&eacute;c&eacute;dent",
+            next: "Suivant",
+            last: "Dernier"
+          },
+          aria: {
+            sortAscending: ": activer pour trier la colonne par ordre croissant",
+            sortDescending: ": activer pour trier la colonne par ordre décroissant"
+          }
+        },
+        bRetrieve: true
+      })
+    })
+    var t = $('#datatable').DataTable({
+      language: {
+        processing: "Traitement en cours...",
+        search: "Rechercher&nbsp;:",
+        lengthMenu: "Afficher _MENU_ &eacute;l&eacute;ments",
+        info: "Affichage de l'&eacute;l&eacute;ment _START_ &agrave; _END_ sur _TOTAL_ &eacute;l&eacute;ments",
+        infoEmpty: "Affichage de l'&eacute;l&eacute;ment 0 &agrave; 0 sur 0 &eacute;l&eacute;ments",
+        infoFiltered: "(filtr&eacute; de _MAX_ &eacute;l&eacute;ments au total)",
+        infoPostFix: "",
+        loadingRecords: "Chargement en cours...",
+        zeroRecords: "Aucun &eacute;l&eacute;ment &agrave; afficher",
+        emptyTable: "Aucune donnée disponible dans le tableau",
+        paginate: {
+          first: "Premier",
+          previous: "Pr&eacute;c&eacute;dent",
+          next: "Suivant",
+          last: "Dernier"
+        },
+        aria: {
+          sortAscending: ": activer pour trier la colonne par ordre croissant",
+          sortDescending: ": activer pour trier la colonne par ordre décroissant"
+        }
+      },
+      "columnDefs": [{
+        "searchable": false,
+        "orderable": false,
+        "targets": 0
+      }],
+    });
+
+    t.on('order.dt search.dt', function () {
+      t.column(0, { search: 'applied', order: 'applied' }).nodes().each(function (cell, i) {
+        cell.innerHTML = i + 1;
+      });
+    }).draw();
+</script>
+{% endblock %}

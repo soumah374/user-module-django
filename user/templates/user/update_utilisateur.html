@@ -1,0 +1,260 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block style %}
+<style type="text/css">
+    body, .body {
+		background: #DDD;
+	}
+	body:before {
+        display: none;
+    }
+	.dropdown-content li>a, .dropdown-content li>span {
+		color: #000;
+	}
+	#name:hover, #name:active,#name:focus {
+		color: #FFF;
+	}
+	.navbar-inverse .navbar-nav>.active {
+        border-bottom: 7px solid #DDD;
+	}
+	    .body,body{background-color:#ddd}body:before{display:none}#retour:active,#retour:focus,#retour:hover{color:#fff}.btn-lg{margin:10px}.navbar-inverse .navbar-nav>.active{border-bottom:7px solid #ddd}.dropdown-content li>span{color:#000}.form-element{margin-top:1.25rem;margin-bottom:1.25rem}.add_field_button{float:right;margin-left:5px}.remove_field{float:right;position:absolute;top:0;right:0}.is-hide{display:none}.upload-box{display:inline-flex}.controler{clear:both}.multiple_emails-input:active,.multiple_emails-input:focus{box-shadow:none!important}.multiple_emails-email{display:inline-block}.select2{margin:16px 5px!important}.select2 .selection .select2-selection--single,.select2-container--default .select2-search--dropdown .select2-search__field{border-width:0 0 1px 0!important;border-radius:0!important;height:2.05rem}.select2-container--default .select2-selection--multiple,.select2-container--default.select2-container--focus .select2-selection--multiple{border-width:0 0 1px 0!important;border-radius:0!important}.select2-results__option{color:#000;padding:8px 16px;font-size:16px}.select2-container--default .select2-results__option--highlighted[aria-selected]{background-color:#eee!important;color:#000!important}.select2-container--default .select2-results__option[aria-selected=true]{background-color:#e1e1e1!important}.select2-dropdown{border:none!important;box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12)}.select2-container--default .select2-results__option[role=group] .select2-results__group{color:#000;font-weight:700}.select2-container .select2-search--inline .select2-search__field{margin-top:0!important}.select2-container .select2-search--inline .select2-search__field:focus{border-bottom:none!important;box-shadow:none!important}.select2-container .select2-selection--multiple{min-height:2.05rem!important}.select2-container--default.select2-container--disabled .select2-selection--single{background-color:#ddd!important;color:rgba(0,0,0,.26);border-bottom:1px dotted rgba(0,0,0,.26)}.reorder-style::after{display:inline}
+    .d-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .flex-cont {
+        width: 49%;
+        min-width: 49%;
+    }
+    .scan-view {
+        display: flex;
+        justify-content: center;
+    }
+    .DWTcontainer {
+        display: flex;
+        flex-direction: row;
+    }
+    .list-btn {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-ind {
+        width: 60px;
+        height: 50px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 4px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<form class="form-horizontal form-card" method="post">
+    <fieldset class="form-fieldset">
+        <legend class="form-legend">Modifier un utilisateur</legend>
+        {% csrf_token %}
+        <div class="row">
+            <input type="hidden" value="{{user.type_utilisateur.name}}" name="type_utilisateur" id="type_utilisateur" required="true">
+            <div class="input-field col s12 m6">
+                {{form.matricule}}
+                <label for="id_matricule">Matricule</label>
+            </div>
+            <div class="input-field col s12 m6">
+                {{form.first_name}}
+                <label for="id_first_name">Prénoms</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12 m6">
+                {{form.last_name}}
+                <label for="id_last_name">Nom</label>
+            </div>
+            <div class="input-field col s12 m6">
+                {{form.genre}}
+                <label for="id_genre">Genre</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                {{form.email}}
+                <label for="id_email">Email</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <label for="id_service">Service</label>
+            </div>
+            <div class="input-field col s12">
+                <select name="service" id="id_service" required="required">
+                    <option value="">-------</option>
+                    {% for service in services %}
+                        {% if service.id == utilisateur.service_id %}
+                            <option value="{{ service.id}}" selected>{{ service.name }}</option>
+                        {% else %}
+                            <option value="{{ service.id}}">{{ service.name }}</option>
+                        {% endif %}
+                    {% endfor %}
+                </select>
+                <div id="input_other_service">
+                    <label for="id_service">Autre service</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <label for="id_fonction">Fonction</label>
+            </div>
+            <div class="input-field col s12">
+                {% comment %} {{form.fonction}} {% endcomment %}
+                <select name="fonction" id="fonction" required="required">
+                    <option value="">-------</option>
+                    {% for fonction in fonctions %}
+                        {% if utilisateur.fonction_id == fonction.id %}
+                            <option value="{{ fonction.id}}" selected>{{ fonction.name }}</option>
+                        {% else %}
+                            <option value="{{ fonction.id}}">{{ fonction.name }}</option>
+                        {% endif %}
+                    {% endfor %}
+                </select>
+                <div id="input_other_fonction">
+                    <label for="id_fonction">Autre fonction</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% if utilisateur.is_superuser == True and utilisateur.isAdminInstance == False%}
+                <div class="input-field col s12 m6">
+                    <input type="text" id="id_type_utilisateur" name="type_utilisateur" value="{{user.type_utilisateur.name}}" readonly>
+                    <label for="id_type_utilisateur">Type Utilisateur</label>
+                </div>
+            {% else %}
+                <div class="input-field col s12">
+                    <label for="id_type_utilisateur">Type Utilisateur</label>
+                </div>
+                <div class="input-field col s12">
+                    <select name="type_utilisateur" id="id_type_utilisateur" required="required">
+                        <option value="">-------</option>
+                        {% for type_utilisateur in type_utilisateurs %}
+                            {% if utilisateur.type_utilisateur_id == type_utilisateur.id %}
+                                <option value="{{ type_utilisateur.id}}" selected> {{ type_utilisateur.name }} </option>
+                            {% else %}
+                                <option value="{{ type_utilisateur.id}}">{{ type_utilisateur.name }}</option>
+                            {% endif %}
+                        {% endfor %}
+                    </select>
+                    <div id="input_other_type_utilisateur">
+                        <label for="id_type_utilisateur">Autre Type Utilisateur</label>
+                    </div>
+                </div>
+            {% endif %}
+            {% if utilisateur.chief %}
+                <div class="input-field col s12">
+                    <input type="text" id="id_chef" value="{{chef}}" readonly>
+                    <label for="id_chef">Chef Hierarchique</label>
+                </div>
+            {% endif %}
+            <div class="input-field col s12">
+                {{form.address}}
+                <label for="id_address">Adresse</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12 m6">
+                {{form.phone}}
+                <label for="id_phone">Téléphone</label>
+            </div>
+            <div class="input-field col s12 m6">
+                {{form.second_email}}
+                <label for="id_second_email">Second Email</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12">
+                <label>
+                    {% if form.is_chef.value == True %}
+                        <input type="checkbox" id='is_chef' name='is_chef'  checked='true'  />
+                    {% else %}
+                        <input type="checkbox" id='is_chef' name='is_chef' />
+                    {% endif %}
+                    <span>Chef (fe) </span>
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <label>
+                     {% if form.is_adjoint.value == True %}
+                        <input type="checkbox" id='is_adjoint' name='is_adjoint' checked='true' />
+                    {% else %}
+                        <input type="checkbox" id='is_adjoint' name='is_adjoint' />
+                    {% endif %}
+                    <span>Chef (fe) adjoint (e)</span>
+                </label>
+            </div>
+        </div>
+
+
+        <div class="row text-center">
+            <button class="btn btn-material_success btn-large" type="submit"> Enregistrer </button>
+            <a class="btn btn-material btn-large" href="javascript:history.go(-1)" id="name"> Annuler</a>
+        </div>
+    </fieldset>
+</form>
+{% endblock content %}
+{% block javascript %}
+	<script>
+        $(document).ready(function () {
+            $('#genre').formSelect();
+            $('#id_service').select2({width:"100%"});
+			$('#fonction').select2({width:"100%"});
+			$('#id_type_utilisateur').select2({width:"100%"});
+
+            let type_utilisateur = $('#id_type_utilisateur').append($('<option>', {value: 'autre', text: 'Autre'}))
+            let service = $('#id_service').append($('<option>', {value: 'autre', text: 'Autre'}))
+            let fonction = $('#fonction').append($('<option>', {value: 'autre', text: 'Autre'}))
+            
+            $('#input_other_type_utilisateur').hide()
+            $('#input_other_service').hide();
+            $('#input_other_fonction').hide();
+            type_utilisateur.on('change', function(event){
+                if(event.target.value === 'autre'){
+                    $('#input_other_type_utilisateur').show();
+                    $('#input_other_type_utilisateur').append($('<input type="text" id="input_other_utilisateur" value="" name="other_type_utilisateur"/>'));
+                }else{
+                    $('#input_other_type_utilisateur').hide();
+                }
+            })
+
+            service.on('change', function(event){
+                if (event.target.value == 'autre'){
+                    $('#input_other_service').show();
+                    $('#input_other_service').append($('<input type="text" id="input_other_service" value="" name="other_service" />'));
+                }else{
+                    $('#input_other_service').hide();
+                }
+            })
+
+            fonction.on('change', function(event) {
+                if(event.target.value == 'autre'){
+                    $('#input_other_fonction').show();
+                    $('#input_other_fonction').append($('<input type="text" id="input_other_fonction" value="" name="other_fonction"/>'))
+                }else{
+                    $('#input_other_fonction').hide();
+                }
+            })
+
+
+           
+            $("#is_chef").on('click', function () {
+                $('#is_adjoint').removeAttr('checked');
+            });
+
+            $("#is_adjoint").on('click', function () {
+                $('#is_chef').removeAttr('checked');
+            });
+        })
+	</script>
+{% endblock javascript%}

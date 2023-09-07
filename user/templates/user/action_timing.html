@@ -1,0 +1,169 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% load lookup %}
+
+{% block link %}
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" />
+  <link type="text/css" href="{% static 'jquery-ui-1.12.1.custom/jquery-ui.min.css' %}" rel="stylesheet" />
+
+{% endblock %}
+
+{% block style %}
+<style>
+    .container{width:100%}.modal .modal-footer{padding:4px 2px}#dateEnd,#dateStart{border:1px solid #ccc;line-height:1.5px;padding:3px 6px;font-size:14px;margin:0 2px;height:27px;width:10%;cursor:pointer;border-radius:4px}
+</style>
+{% endblock %} 
+
+{% block content %}
+  <h2 class="text-center">Les temps d'utilisation dans l'application</h2>
+  <br><br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="text-center">
+        <form action="" method="GET"> 
+            <span class="form-inline">
+                <span class="form-inline">
+                  <label>Date debut</label>
+                  <input type="text" name="dateStart" id="dateStart"  class="datepicker" required/> 
+                </span>  
+                <span class="form-inline">
+                    <label>Date fin</label>
+                    <input type="text" name="dateEnd" id="dateEnd" class="datepicker" required/>
+                </span>
+                <span class="form-inline">
+                  <button type="submit" class="btn btn-info">Rechercher</button>
+                </span>
+              </span>
+        </form>
+      </div>
+    </div>
+  </div>
+<br>
+
+<div class="content">
+  <div class="row">
+      <div class="col-lg-4 col-lg-offset-8" style="display: flex; justify-content: flex-end; align-items: center;">
+            <a class="btn btn-primary" href="{% url 'user:export_liste_users_timing_xls' %}" role="button">Télécharger au format excel</a>
+        </div>
+  </div>
+</div>
+
+<table class="table table-striped table-bordered" cellspacing="0" width="100%" id="datatable">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Utilisateur</th>
+      <th>Mois et Annees </th>
+      <th>Temps d'utilisation Totale</th>
+      <th>Détails</th>
+    </tr>
+  </thead>
+  <tbody>
+
+        {% for  all_user in only_superuser  %}
+            <tr>
+                <td></td>
+                <td>{{ all_user.user.first_name }} {{ all_user.user.last_name }}</td>
+                <td> 
+                    {% language 'fr' %}
+                    {{all_user.date_action|date:'F Y' }}
+                    {% endlanguage %} 
+                </td>
+                <td>    
+                  {{ all_user.user_time}}
+                </td>
+                <td>
+                  <a title="Détails" href="{% url 'user:details_users_timing_action' all_user.user.id %}">
+                    <span class="glyphicon glyphicon-eye-open"></span>
+                  </a>
+                </td>
+            </tr>
+        {%endfor%}
+  </tbody>
+ </table>
+{% endblock content %}
+
+{% block javascript %}
+  <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript" src="{% static 'jquery-ui-1.12.1.custom/jquery-ui.min.js' %}" ></script>
+
+  <script>
+      $(document).ready(function () {
+        var t = $('#datatable').DataTable({
+            language: {
+            processing: "Traitement en cours...",
+            search: "Rechercher&nbsp;:",
+            lengthMenu: "Afficher _MENU_ &eacute;l&eacute;ments",
+            info: "Affichage de l'&eacute;l&eacute;ment _START_ &agrave; _END_ sur _TOTAL_ &eacute;l&eacute;ments",
+            infoEmpty: "Affichage de l'&eacute;l&eacute;ment 0 &agrave; 0 sur 0 &eacute;l&eacute;ments",
+            infoFiltered: "(filtr&eacute; de _MAX_ &eacute;l&eacute;ments au total)",
+            infoPostFix: "",
+            loadingRecords: "Chargement en cours...",
+            zeroRecords: "Aucun &eacute;l&eacute;ment &agrave; afficher",
+            emptyTable: "Aucune donnée disponible dans le tableau",
+            paginate: {
+              first: "Premier",
+              previous: "Pr&eacute;c&eacute;dent",
+              next: "Suivant",
+              last: "Dernier"
+            },
+            
+            aria: {
+              sortAscending: ": activer pour trier la colonne par ordre croissant",
+              sortDescending: ": activer pour trier la colonne par ordre décroissant"
+            }
+          },
+          searching: false,
+          bRetrieve: true,
+            "columnDefs": [{
+              "searchable": false,
+              type: "date",
+              "orderable": false,
+              "targets": 0
+            }]
+        }).draw();
+
+        t.on('order.dt search.dt', function () {
+          t.column(0, { search: 'applied', order: 'applied' }).nodes().each(function (cell, i) {
+            cell.innerHTML = i + 1;
+          });
+        }).draw();
+        $('#filter_user').on('change', function () {
+          var val = $.fn.dataTable.util.escapeRegex(this.value)
+          t.columns(1).search( val ? '^'+val+'$' : '', true, false).draw()
+        })
+        $('#filter_action').on('change', function () {
+          var val = $.fn.dataTable.util.escapeRegex(this.value)
+          t.columns(2).search( val ? '^'+val+'$' : '', true, false).draw()
+        })
+        $('#filter_page').on('change', function () {
+          var val = $.fn.dataTable.util.escapeRegex(this.value)
+          t.columns(5).search( val ? '^'+val+'$' : '', true, false).draw()
+        })
+      
+      function parseDateValue(rawDate,yearPosition,monthPosition,dayPosition){
+        var dateArray=rawDate.split("/");
+        var yp=yearPosition-1;
+        var mp=monthPosition-1;
+        var dp=dayPosition-1;
+        var parsedDate=dateArray[yp]+dateArray[mp]+dateArray[dp];return parsedDate
+      }
+
+    $('.datepicker').datepicker({
+        showOn:'button',
+        buttonImage:"{% static 'jquery-ui-1.12.1.custom/images/calendar.gif'' %}",
+        buttonImageOnly:!0,
+        dateFormat:"dd/mm/yy",
+        dayNames:["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"],
+        dayNamesMin:["Di","Lu","Ma","Me","Je","Ve","Sa"],
+        monthNames:["Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Aout","Septembre","Octobre","Novembre","Decembre"],
+      });
+      
+      })
+
+      
+     
+  </script>
+{% endblock %}

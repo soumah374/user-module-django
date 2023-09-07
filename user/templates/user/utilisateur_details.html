@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load permission_tags %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block style %}
+<style type="text/css">
+	.secondary-content {
+		color: #000;
+		font-weight: lighter;
+	}
+	.head {
+   	 	margin-top: 1%;
+		padding: 0;
+	}
+	strong {
+		font-weight: bolder;
+	}
+</style>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+		<ul class="collection with-header" style="width: 700px;margin: auto;">
+			<li class="collection-header text-center"><h3>Détails utilisateur</h3></li>
+			<li class="collection-item"><div>
+				<strong>Matricule</strong>
+				<span class="secondary-content">{{ utilisateur.matricule }}</span></div>
+			</li>
+			<li class="collection-item"><div>
+				<strong>Prénoms</strong>
+				<span class="secondary-content">{{ utilisateur.first_name }}</span></div>
+			</li>
+			<li class="collection-item"><div>
+				<strong>Nom</strong>
+				<span class="secondary-content">{{ utilisateur.last_name }}</span></div>
+			</li>
+			<li class="collection-item"><div>
+				<strong>Service</strong>
+				<span class="secondary-content">{{ utilisateur.service }}</span></div>
+			</li>
+			<li class="collection-item"><div>
+				<strong>Fonction</strong>
+				<span class="secondary-content">{{ utilisateur.fonction }}</span></div>
+			</li>
+			<li class="collection-item"><div>
+				<strong>Genre</strong>
+				<span class="secondary-content">{{utilisateur.genre}}</span></div>
+			</li>
+			<li class="collection-item"><div>
+				<strong>Phone</strong>
+				<span class="secondary-content">{{utilisateur.phone}}</span></div>
+			</li>
+			<li class="collection-item"><div>
+				<strong>Type utilisateur</strong>
+				<span class="secondary-content">{{utilisateur.type_utilisateur}}</span></div>
+			</li>
+			{% if utilisateur.chief %}
+				<li class="collection-item"><div>
+					<strong>Chef Hierarchique</strong>
+					<span class="secondary-content">{{chef}}</span></div>
+				</li>
+			{% endif %}
+
+			{% if utilisateur.is_chief %}
+				<li class="collection-item"><div>
+					<strong>Chef (fe) </strong>
+					<span class="secondary-content">Oui</span></div>
+				</li>
+			{% endif %}
+			{% if utilisateur.is_adjoint %}
+				<li class="collection-item"><div>
+					<strong>Chef (fe) ajoint (e)</strong>
+					<span class="secondary-content">Oui</span></div>
+				</li>
+			{% endif %}
+			<li class="collection-item"><div>
+				<strong>Adresse</strong>
+				<span class="secondary-content">{{utilisateur.address}}</span></div>
+			</li>
+		</ul>
+		<div class="row" style="margin: auto;width: 700px;padding: 20px 0;">
+			<a class="btn btn-material" href="javascript:history.go(-1)">
+				<span class="glyphicon glyphicon-arrow-left"></span>
+				Retour
+			</a>
+			<a class="btn btn-material_danger btn-small" href="{% url 'user:update_password_user' utilisateur.id %}">Reinitialiser mot de passe</a>
+			<a href="{% url 'user:details_users_timing_action' utilisateur.id %}" class="btn btn-material">Afficher les statistiques</a>
+			<!-- <button ></button> -->
+		</div>
+		{% if utilisateur.isAdmin %}
+			<div class="row" style="margin: auto;width: 700px;padding: 20px 0;">
+				<a href="{% url 'user:list_utilisateur_spc' %}?admin={{utilisateur.id}}" class="btn btn-material">Ajouter un assistant / S.P</a>
+			</div>
+		{% endif %}
+	</div>
+{% endblock content %}
+{% block javascript %}
+	<script>
+
+	</script>
+{% endblock javascript%}

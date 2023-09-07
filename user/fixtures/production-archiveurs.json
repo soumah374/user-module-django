@@ -1,0 +1,103 @@
+[
+    {
+        "model": "user.Utilisateur",
+        "pk": 92,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dtinguiano79@gmail.com",
+            "first_name": "David",
+            "last_name": "TINGUIANO",
+            "service": 32,
+            "fonction": 79,
+            "phone": "622 21 51 05",
+            "type_utilisateur": 12,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+
+    {
+        "model": "user.Utilisateur",
+        "pk": 93,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "fatimamayeni2021@gmail.com",
+            "first_name": "Fatoumata",
+            "last_name": "CAMARA",
+            "service": 32,
+            "fonction": 24,
+            "phone": "622 21 51 05",
+            "type_utilisateur": 12,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+
+    {
+        "model": "user.Utilisateur",
+        "pk": 94,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "hawamara00022@gmail.com",
+            "first_name": "Hawa",
+            "last_name": "MARA",
+            "service": 32,
+            "fonction": 79,
+            "phone": "622 21 51 05",
+            "type_utilisateur": 12,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+
+    {
+        "model": "user.Utilisateur",
+        "pk": 95,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ibrahimabaga123@gmail.com",
+            "first_name": "Ibrahima Naby",
+            "last_name": "BANGOURA",
+            "service": 32,
+            "fonction": 79,
+            "phone": "622 21 51 05",
+            "type_utilisateur": 12,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+
+    {
+        "model": "user.Utilisateur",
+        "pk": 96,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "kadertolono11@gmail.com",
+            "first_name": "André Kader",
+            "last_name": "TOLNO",
+            "service": 32,
+            "fonction": 80,
+            "phone": "622 21 51 05",
+            "type_utilisateur": 12,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    }
+
+
+]

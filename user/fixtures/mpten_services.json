@@ -1,0 +1,102 @@
+[
+  {
+    "model": "user.Services",
+    "pk": 21,
+    "fields": {
+      "name": "Cabinet du Ministre",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 22,
+    "fields": {
+      "name": "Secr\u00e9tariat G\u00e9n\u00e9ral",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 23,
+    "fields": {
+      "name": "Chef de Cabinet",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 24,
+    "fields": {
+      "name": "Inspection G\u00e9n\u00e9ral",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 25,
+    "fields": {
+      "name": "Direction Generale BSD",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 26,
+    "fields": {
+      "name": "Direction Nationale DNT",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 27,
+    "fields": {
+      "name": "Direction Nationale DNTIEN",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 28,
+    "fields": {
+      "name": "Direction Nationale /P",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 29,
+    "fields": {
+      "name": "Sectretariat Central",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  },
+  {
+    "model": "user.Services",
+    "pk": 434,
+    "fields": {
+      "name": "Archivage",
+      "instance": 1,
+      "created_at": "2018-07-20 07:07:07.61434+00",
+      "updated_at": "2018-07-20 07:07:07.61434+00"
+    }
+  }
+]

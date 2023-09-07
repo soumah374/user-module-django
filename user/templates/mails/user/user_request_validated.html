@@ -1,0 +1,24 @@
+{% autoescape off %}
+Bonjour Mr {{ user_admin.last_name }}, <br />
+L utilisateur aevc l email {{ user_registered.email }} a valide sa demande d enregistrement du 
+{{user_registered.created_at}}. <br />
+Ces informations sont :
+
+<pre>
+
+|---------------------------------------------------|
+| Matricule   : {{user_registered.matricule}}       |
+| Nom         : {{user_registered.last_name}}       |
+| Prénoms     : {{user_registered.first_name}}      |
+| Email       : {{user_registered.email}}           |
+| Fonction    : {{user_registered.fonction}}        |
+| Genre       : {{user_registered.genre}}           |
+| Téléphone   : {{user_registered.phone}}           |
+| Adresse     : {{user_registered.address}}         |
+|---------------------------------------------------|
+
+
+L'equipe GEC
+</pre>
+
+{% endautoescape %}

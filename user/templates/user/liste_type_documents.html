@@ -1,0 +1,269 @@
+{% extends 'base.html' %}
+{% load permission_tags %}
+{% load static %}
+{% load lookup %}
+
+{% block style %}
+  <style>
+    .name:hover, .name:active,.name:focus {
+      color: #FFF;
+    }
+    .container {
+        width: 100%;
+    }
+    .modal-title {
+      text-align: center;
+      font-weight: bold;
+    }
+    a {
+      text-decoration: none !important;
+    }
+    .btn-active__style {
+      padding-left: 16px;
+      padding-right: 20px;
+    }
+    .btn-lg {
+      padding: 10px 16px;
+    }
+  </style>
+{% endblock %}
+
+{% block link %}
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" /> 
+{% endblock %}
+
+{% block content %}
+
+  <h2 class="text-center">Type Documents</h2>
+
+  <div class="content">
+    {% if user.is_admin or user.isAdminInstance %}
+      <div class="row">
+        <div class="col-lg-8">
+          <button id="send-btn" type="button" class="btn btn-material_success btn-large" data-toggle="modal" data-target="#newtype">
+            <span class="glyphicon glyphicon-plus"></span>
+            Ajouter un type document
+          </button>
+        </div>
+        <br>
+      </div>
+      <br/>
+    {% endif %}
+    <table class="table table-striped table-bordered" cellspacing="0" width="100%" id="datatable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nom</th>
+          <th>Cycle de vie(jrs)</th>
+          <th>Date de création</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for type in type_documents %}
+            <tr>
+              <td></td>
+              <td>{{ type.name }}</td>
+              <td>{{ type.ci }}</td>
+              <td>{{ type.cycle_vie }}</td>
+              <td>{{ type.created_at }}</td>
+              <td>
+                    <a title="Détails" href="#" data-toggle="modal" data-target="#{{type.id}}view" class="btn-user">
+                      <span class="glyphicon glyphicon-eye-open"></span>
+                    </a>
+                    <a title="Editer" href="#" data-toggle="modal" data-target="#{{type.id}}edit" class="btn-user">
+                      <span class="glyphicon glyphicon glyphicon-pencil"></span>
+                    </a>
+                    {% if type.name != 'Tous' %}
+                      <a title="Supprimer" href="#" data-toggle="modal" data-target="#{{type.id}}delete" class="btn-user">
+                        <span class="glyphicon glyphicon-trash"></span>
+                      </a>
+                    {% endif  %}
+                    
+              </td>
+          </tr>
+
+            <!-- View Popup --->
+            <div id="{{type.id}}view" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content -->
+                  <form class="form-horizontal form-card" method="post" action="#">
+                      <fieldset class="form-fieldset">
+                        {% csrf_token %}
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Détails du type document</h4>
+                          </div>
+                          <div class="modal-body" id="user-details">
+                            
+                            <div class="row">
+                              <div class="input-field col s6">
+                                <input type="text" value="{{type.name}}" name="name" id="id_name" disabled>
+                                <label for="id_name">Intitulé du type document</label>
+                              </div>
+                              <div class="input-field col s6">
+                                <input type="number" name="cycle_vie" value="{{type.cycle_vie}}" disabled>
+                                <label for="id_cycle_vie">Cycle de vie</label>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="submit" style="display: none;" class="btn btn-material_success">Mise à jour</button>
+                            <button type="button" class="btn btn-material" data-dismiss="modal">Fermer</button>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </form>
+                  </div>
+            </div>
+
+            <!-- Edit popup --->
+            <div id="{{type.id}}edit" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content -->
+                  <form class="form-horizontal form-card" method="post" action="{% url 'ged:update_type_document' type.id %}">
+                      <fieldset class="form-fieldset">
+                        {% csrf_token %}
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Edition du type de dcoument</h4>
+                          </div>
+                          <div class="modal-body" id="user-details">
+                            <div class="row">
+                              <div class="input-field col s6">
+                                <input type="text" value="{{type.name}}" name="name" id="id_name">
+                                <label for="id_name">Intitulé du type de document</label>
+                              </div>
+                              <div class="input-field col s6">
+                                <input type="number" name="cycle_vie" value="{{type.cycle_vie}}" min=0>
+                                <label for="id_cycle_vie">Cycle de vie</label>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="submit" class="btn btn-material_success">Mise à jour</button>
+                            <button type="button" class="btn btn-material" data-dismiss="modal">Annuler</button>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </form>
+                  </div>
+            </div>
+            
+            <!-- Delete popup --->
+          <div id="{{type.id}}delete" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Supression du type document</h4>
+                    </div>
+                    <div class="modal-body" id="user-details">
+                        <h6>Etes vous sur de vouloir supprimer le type document <strong> {{ type.name }} </strong>  ?</h6>
+                        
+                        <div class="modal-footer">
+                            <a href="{% url 'ged:delete_type_document' type.id %}" class="btn btn-material_danger" id="name">
+                                <span class="glyphicon glyphicon-trash"></span>
+                                  Oui
+                            </a>
+                            <button type="button" class="btn btn-material" data-dismiss="modal">Annuler</button>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+        {% endfor %}
+        
+          <!-- User Detail Modal -->
+          <div id="newtype" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content -->
+              <form class="form-horizontal form-card" method="post" action="{% url 'ged:type_document' %}">
+                <fieldset class="form-fieldset">
+                  {% csrf_token %}
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Ajout d'un type document</h4>
+                    </div>
+                    <div class="modal-body" id="user-details">
+
+                      <div class="row">
+                        <div class="input-field col s6">
+                          {{form.name}}
+                          <label for="id_name">Nom du type document: </label>
+                        </div>
+                        <div class="input-field col s6">
+                          {{form.cycle_vie}}
+                          <label for="id_cycle_vie">Cycle de vie(jrs): </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-material_success">Valider</button>
+                      <button type="button" class="btn btn-material" data-dismiss="modal">Annuler</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+      </tbody>
+    </table>
+  </div>
+
+{% endblock %}
+{% block javascript %}
+<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+<script>
+  $(document).ready(function () {
+
+    var t = $('#datatable').DataTable({
+      language: {
+        processing: "Traitement en cours...",
+        search: "Rechercher&nbsp;:",
+        lengthMenu: "Afficher _MENU_ &eacute;l&eacute;ments",
+        info: "Affichage de l'&eacute;l&eacute;ment _START_ &agrave; _END_ sur _TOTAL_ &eacute;l&eacute;ments",
+        infoEmpty: "Affichage de l'&eacute;l&eacute;ment 0 &agrave; 0 sur 0 &eacute;l&eacute;ments",
+        infoFiltered: "(filtr&eacute; de _MAX_ &eacute;l&eacute;ments au total)",
+        infoPostFix: "",
+        loadingRecords: "Chargement en cours...",
+        zeroRecords: "Aucun &eacute;l&eacute;ment &agrave; afficher",
+        emptyTable: "Aucune donnée disponible dans le tableau",
+        paginate: {
+          first: "Premier",
+          previous: "Pr&eacute;c&eacute;dent",
+          next: "Suivant",
+          last: "Dernier"
+        },
+        aria: {
+          sortAscending: ": activer pour trier la colonne par ordre croissant",
+          sortDescending: ": activer pour trier la colonne par ordre décroissant"
+        }
+      },
+      "columnDefs": [{
+        "searchable": false,
+        "orderable": false,
+        "targets": 0
+      }],
+      "order": [[1, 'asc']]
+    });
+
+    t.on('order.dt search.dt', function () {
+      t.column(0, { search: 'applied', order: 'applied' }).nodes().each(function (cell, i) {
+        cell.innerHTML = i + 1;
+      });
+    })
+    .draw();
+
+  });
+
+
+</script>
+{% endblock %}

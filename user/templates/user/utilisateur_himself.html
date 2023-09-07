@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+{% load permission_tags %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block style %}
+<style type="text/css">
+    .btn-send {
+        background-color: #337ab7 !important;
+        color: #FFFFFF;
+    }
+
+    .dropdown-content li>a, .dropdown-content li>span {
+		color: #000;
+	}
+
+    #form {
+        margin-top: 1%;
+    }
+
+    .well {
+        background: rgba(255, 255, 255, 1);
+        opacity: 0.8;
+    }
+
+   	.head {
+   	 	margin-top: 1%;
+		padding: 0;
+   	}
+    .head p a {
+		background-color: transparent;
+		color: #337ab7;
+		text-decoration: none;
+		padding: 3px;
+    }
+    .head p a:hover,
+    .head p a:active {
+		background: #337ab7;
+		color: white;
+		border-radius: 3px;
+    }
+    .buttonHolder {
+		text-align: left;
+    }
+    .buttonHolder input{
+	    font-weight: bold;
+	    font-size: 100%;
+    }
+    .buttonHolder input:hover {
+        cursor: pointer;
+    }
+</style>
+{% endblock %}
+
+
+{% block content %}
+
+    <div class="row">
+        <form class="form-horizontal" method="post" action="{% url 'user:register2' %}">
+            <fieldset class="form-fieldset">
+                <legend class="form-legend">Enregistrement d'un utilisateur</legend>
+                {% csrf_token %}
+                <div class="row">
+                    <div class="input-field col s12">
+                        {{form.matricule}}
+                        <label for="id_matricule">Matricule</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        {{form.first_name}}
+                        <label for="id_first_name">Prénoms</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        {{form.last_name}}
+                        <label for="id_last_name">Nom</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input type="text" value="{{ user.second_email }}" name="second_email" class="form-control"  id="id_second_email" readonly>
+                        <label for="id_second_email">Email Secondaire</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input type="text" value="{{ user_email }}" name="user_email" class="form-control"  id="id_user_email" readonly>                   
+                        <label for="id_user_email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        {{form.genre}}
+                        <label for="id_genre">Genre</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <select name="service" id="id_service" required disabled>
+                            <option value="">-- sélectionner --</option>
+                            {% for service in services %}
+                                {% if service.id == user.service_id %}
+                                    <option value="{{service.id}}" selected> {{ service }}</option>
+                                {% endif %}
+                            {% endfor %}
+                        </select>
+                        <label for="id_service">Service :</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <select name="fonction" id="id_fonction" required disabled>
+                            <option value="">-- sélectionner --</option>
+                            {% for fonction in fonctions %}
+                                {% if fonction.id == user.fonction_id %}
+                                    <option value="{{service.id}}" selected> {{ fonction }}</option>
+                                {% endif %}
+                            {% endfor %}
+                        </select>
+                        <label for="id_fonction">Fonction :</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input type="text" value="{{ user_type }}" name="user_type" class="form-control"  id="id_user_type" disabled> 
+                        <label for="id_user_type">Type Utilisateur</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        {{form.phone}}
+                        <label for="id_phone">Téléphone</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input type="password" name="password" required class="form-control" id="id_password">
+                        <label for="id_password">Mot de passe</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input type="password" name="confirmation" required class="form-control" id="id_confirmation">  
+                        <label for="id_confirmation">Confirmation</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        {{form.address}}
+                        <label for="id_address">Adresse</label>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <button class="btn btn-material_success btn-large" type="submit" > Valider</button>
+                    <a class="btn btn-material btn-large" href="javascript:history.go(-1)"> Annuler</a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+{% endblock content %}
+{% block javascript %}
+	<script>
+        $(document).ready(function () {
+            $('select').formSelect();
+            if(($('#id_user_type').val() == 'Secrétaire Particulier')||($('#id_user_type').val() == 'Secrétaire Central')){
+                $("#id_fonction").val("5");
+                $('#id_fonction').attr('disabled', true);
+            }
+        })
+	</script>
+{% endblock javascript%}

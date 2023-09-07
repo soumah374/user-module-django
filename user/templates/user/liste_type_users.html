@@ -1,0 +1,215 @@
+{% extends 'base.html' %}
+{% load permission_tags %}
+{% load static %}
+{% load lookup %}
+
+
+
+{% block link %}
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" />
+{% endblock %}
+{% block style %}
+  <style>
+    .container {
+        width: 100%;
+    }
+    .modal-title {
+      text-align: center;
+      font-weight: bold;
+    }
+    .ms-parent {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #9e9e9e;
+    }
+    .ms-choice {
+      background-color: transparent !important;
+    }
+    .ms-choice>span {
+      padding-left: 0;
+    }
+    .ms-drop {
+      border: none;
+      border-radius: 0;
+    }
+    .label-choice {
+      top: -10px !important;
+    }
+    .color-inp-b {
+      border-bottom: 2px solid #26a69a;
+    }
+    .color-inp {
+      color: #26a69a !important;
+    }
+    .ms-drop>ul {
+      max-height: initial !important;
+    }
+    .ms-drop ul>li label {
+      font-size: 16px;
+      line-height: 22px;
+      padding: 5px;
+    }
+    .ms-drop>ul>li>label>input[type="checkbox"] {
+      position: relative;
+      opacity: 1;
+      pointer-events: auto;
+      margin-right: 5px;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+{% hasPermission user 'view_type_user' as view_type_user  %}
+{% hasPermission user 'add_type_user' as add_type_user  %}
+{% hasPermission user 'edit_type_user' as edit_type_user  %}
+
+  <h2 class="text-center">Types utilisateurs</h2>
+  <div class="content">
+    {% if user.is_admin or user.isAdminInstance %}
+      {% if add_type_user or user.is_admin or user.isAdminInstance %}
+      <div class="row">
+        <div class="col-lg-8">
+          <a class="btn btn-material_success btn-large" href="{% url 'user:add_type_user' %}">
+            <span class="glyphicon glyphicon-plus"></span>
+            Ajouter un type utilisateur 
+          </a>
+        </div>
+        <br>
+          <div class="col-lg-4" style="display: flex; justify-content: flex-end; align-items: center;">
+            <a class="btn btn-primary" href="{{url}}?prints=print" role="button">Telecharger au format excel  </a> 
+          </div>
+      </div>
+      <br/>
+      {% endif %}
+    {% endif %}
+
+    <table class="table table-striped table-bordered" cellspacing="0" width="100%" id="datatable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Type Utilisateur</th>
+          <th>Date de création</th>
+          <th>Identifiant</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for type_utilisateur in type_utilisateurs %}
+            <tr>
+              <td></td>
+              <td>{{ type_utilisateur.name }}</td>
+              <td>{{ type_utilisateur.created_at }}</td>
+              <td>{{ type_utilisateur.id }}</td>
+              <td>
+                {% if view_type_user or user.is_admin or user.isAdminInstance %}
+                  <a title="Détails"  href="{% url 'user:update_type_user' type_utilisateur.id  %}?view=true" class="btn-user">
+                    <span class="glyphicon glyphicon-eye-open"></span>
+                  </a>
+                {% endif %}
+                  <!--a href="#" data-toggle="modal" data-target="#{{type_utilisateur.id}}View" class="btn-user" id="name">
+                    <span class="glyphicon glyphicon-trash"></span>
+                  </a-->
+                {% if edit_type_user or user.is_admin or user.isAdminInstance %}
+                  <a title="Editer" href="{% url 'user:update_type_user' type_utilisateur.id %}"  class="btn-user">
+                    <span class="glyphicon glyphicon-edit"></span>
+                  </a>
+                {% endif %}
+              </td>
+            </tr>
+
+            <div id="{{type_utilisateur.id}}View" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Supression type utilisateur</h4>
+                  </div>
+                  <div class="modal-body" id="user-details">
+                      <h3>Etes vous sur ?</h3>
+                      <div class="modal-footer">
+                          <a href="{% url 'user:delete_type_utilisateur' type_utilisateur.id %}" class="btn btn-material_danger btn-small" id="name">
+                              <span class="glyphicon glyphicon-trash"></span>
+                                Supprimer
+                            </a>
+
+                          <button type="button" class="btn btn-material btn-small" data-dismiss="modal">Annuler</button>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        {% endfor %}
+          </div>
+      </tbody>
+    </table>
+  </div>
+
+{% endblock %}
+{% block javascript %}
+<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $(".id_permissions").multipleSelect({
+      selectAll: false,
+      placeholder: 'Selectionez une ou plusieurs permissions'
+    });
+    let type_utilisateurs = "{{json_types|escapejs}}"
+    console.log(JSON.parse(type_utilisateurs));
+    for (const t of JSON.parse(type_utilisateurs)) {
+      $(`#id_permissions_${t.id}`).multipleSelect({
+        selectAll: false,
+        placeholder: 'Selectionez'
+      });
+    }
+    $('.label-choice').addClass('active')
+    $('.ms-parent').focusin(()=>{
+      $('.label-choice').addClass('color-inp')
+      $('.ms-parent').addClass('color-inp-b')
+    })
+    $('.ms-parent').focusout(()=>{
+      $('.label-choice').removeClass('color-inp')
+      if ($('.ms-choice>span').hasClass('placeholder')) {
+        $('.ms-parent').removeClass('color-inp-b')
+      }
+    })
+      var t = $('#datatable').DataTable({
+        language: {
+          processing: "Traitement en cours...",
+          search: "Rechercher&nbsp;:",
+          lengthMenu: "Afficher _MENU_ &eacute;l&eacute;ments",
+          info: "Affichage de l'&eacute;l&eacute;ment _START_ &agrave; _END_ sur _TOTAL_ &eacute;l&eacute;ments",
+          infoEmpty: "Affichage de l'&eacute;l&eacute;ment 0 &agrave; 0 sur 0 &eacute;l&eacute;ments",
+          infoFiltered: "(filtr&eacute; de _MAX_ &eacute;l&eacute;ments au total)",
+          infoPostFix: "",
+          loadingRecords: "Chargement en cours...",
+          zeroRecords: "Aucun &eacute;l&eacute;ment &agrave; afficher",
+          emptyTable: "Aucune donnée disponible dans le tableau",
+          paginate: {
+            first: "Premier",
+            previous: "Pr&eacute;c&eacute;dent",
+            next: "Suivant",
+            last: "Dernier"
+          },
+          aria: {
+            sortAscending: ": activer pour trier la colonne par ordre croissant",
+            sortDescending: ": activer pour trier la colonne par ordre décroissant"
+          }
+        },
+        "columnDefs": [{
+          "searchable": false,
+          "orderable": false,
+          "targets": 0
+        }],
+        "order": [[1, 'asc']]
+      });
+
+      t.on('order.dt search.dt', function () {
+        t.column(0, { search: 'applied', order: 'applied' }).nodes().each(function (cell, i) {
+          cell.innerHTML = i + 1;
+        });
+      }).draw();
+    })
+
+  </script>
+{% endblock %}

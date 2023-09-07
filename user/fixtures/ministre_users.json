@@ -1,0 +1,3278 @@
+[
+    {
+        "model": "user.Utilisateur",
+        "pk": 1,
+        "fields": {
+            "is_superuser": "True",
+            "is_admin": "True",
+            "is_staff": "True",
+            "email": "admin@admin.com",
+            "first_name": "admin",
+            "last_name": "admin",
+            "type_utilisateur": 6,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 2,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "prg@gouvernement.gov.gn",
+            "first_name": "Mamadi ",
+            "last_name": "Doumbouya",
+            "service": 1,
+            "fonction": 1,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 3,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.prg@gouvernement.gov.gn",
+            "first_name": "Colonel Amara ",
+            "last_name": "Camara",
+            "service": 1,
+            "fonction": 2,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 4,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dircab.prg@gouvernement.gov.gn",
+            "first_name": "Djiba ",
+            "last_name": "Diakite",
+            "service": 1,
+            "fonction": 3,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 5,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "assistant.prg@gouvernement.gov.gn",
+            "first_name": "Abodoulaye ",
+            "last_name": "Diallo",
+            "service": 1,
+            "fonction": 4,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 6,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dirpro.prg@gouvernement.gov.gn",
+            "first_name": "Ahmed Sekou ",
+            "last_name": "Coumbassa",
+            "service": 1,
+            "fonction": 5,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 7,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dircom.prg@gouvernement.gov.gn",
+            "first_name": "Moussa Moise ",
+            "last_name": "Syyla",
+            "service": 1,
+            "fonction": 6,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 8,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dirjuridique.prg@gouvernement.gov.gn",
+            "first_name": "Djami ",
+            "last_name": "Diallo",
+            "service": 1,
+            "fonction": 7,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 9,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "cprincipal.prg@gouvernement.gov.gn",
+            "first_name": "Bokar Baila ",
+            "last_name": "Ly",
+            "service": 1,
+            "fonction": 8,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 10,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "cjuridique.prg@gouvernement.gov.gn",
+            "first_name": "Alpha Oumar ",
+            "last_name": "Camara",
+            "service": 1,
+            "fonction": 9,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 11,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "cmission.prg@gouvernement.gov.gn",
+            "first_name": "Mohamed Fiman ",
+            "last_name": "Camara",
+            "service": 1,
+            "fonction": 10,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 12,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "cpersonnel.prg@gouvernement.gov.gn",
+            "first_name": "Thierno Mamadou ",
+            "last_name": "Bah",
+            "service": 1,
+            "fonction": 11,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 13,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "cdiplomatique@gouvernement.gov.gn",
+            "first_name": "Paul Goya ",
+            "last_name": "Zoumanigui",
+            "service": 1,
+            "fonction": 12,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 14,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "cenergie@gouvernement.gov.gn",
+            "first_name": "Sekou Sanfina ",
+            "last_name": "Diakite",
+            "service": 1,
+            "fonction": 13,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 15,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "premierministre@gouvernement.gov.gn",
+            "first_name": "Mohamed ",
+            "last_name": "Behavogui",
+            "service": 2,
+            "fonction": 14,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 16,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dircab.pm@gouvernement.gov.gn",
+            "first_name": "Amadou Saikou ",
+            "last_name": "Diallo",
+            "service": 2,
+            "fonction": 3,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 17,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.pm@gouvernement.gov.gn",
+            "first_name": "Halimatou ",
+            "last_name": "Kaba",
+            "service": 2,
+            "fonction": 15,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 18,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dircom.pm@gouvernement.gov.gn",
+            "first_name": "Mohamed ",
+            "last_name": "Bangoura",
+            "service": 2,
+            "fonction": 16,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 19,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dsi.pm@gouvernement.gov.gn",
+            "first_name": "Sidikiba ",
+            "last_name": "Kaba",
+            "service": 2,
+            "fonction": 17,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 20,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "conseillerntic.pm@gouvernement.gov.gn",
+            "first_name": "Himi Deen ",
+            "last_name": "Toure",
+            "service": 2,
+            "fonction": 18,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 21,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "assistantmin.pm@gouvernement.gov.gn",
+            "first_name": "Assistante du ",
+            "last_name": "PM",
+            "service": 2,
+            "fonction": 19,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 22,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "cmines.pm@gouvernement.gov.gn",
+            "first_name": "Bachir ",
+            "last_name": "Camara",
+            "service": 2,
+            "fonction": 20,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 23,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.mpten@gouvernement.gov.gn",
+            "first_name": "Aminata ",
+            "last_name": "Kaba",
+            "service": 3,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 24,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.mpten@gouvernement.gov.gn",
+            "first_name": "Bamba ",
+            "last_name": "Oliano",
+            "service": 3,
+            "fonction": 22,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 25,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.mpten@gouvernement.gov.gn",
+            "first_name": "N'Faly ",
+            "last_name": "Sylla",
+            "service": 3,
+            "fonction": 23,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 26,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ct.mpten@gouvernement.gov.gn",
+            "first_name": "Fode ",
+            "last_name": "Youla",
+            "service": 3,
+            "fonction": 18,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 27,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "assistantmin.mpten@gouvernement.gov.gn",
+            "first_name": "Aicha ",
+            "last_name": "Diallo",
+            "service": 3,
+            "fonction": 24,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 28,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dgbsd.mpten@gouvernement.gov.gn",
+            "first_name": "Yaye Mariame ",
+            "last_name": "Diallo",
+            "service": 3,
+            "fonction": 25,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 29,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.mefp@gouvernement.gov.gn",
+            "first_name": "Lancine ",
+            "last_name": "Conde",
+            "service": 4,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 30,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.mefp@gouvernement.gov.gn",
+            "first_name": "Abdoulaye ",
+            "last_name": "Toure",
+            "service": 4,
+            "fonction": 22,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 31,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.mefp@gouvernement.gov.gn",
+            "first_name": "Morlaye ",
+            "last_name": "Soumah",
+            "service": 4,
+            "fonction": 23,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 32,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "assistantmin.mefp@gouvernement.gov.gn",
+            "first_name": "Nabila ",
+            "last_name": "Houballah",
+            "service": 4,
+            "fonction": 26,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 33,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dsi.mefp@gouvernement.gov.gn",
+            "first_name": "Mohamed ",
+            "last_name": "Toure",
+            "service": 4,
+            "fonction": 17,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 34,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.mdef@gouvernement.gov.gn",
+            "first_name": "Aboubacar Sidiki ",
+            "last_name": "Camara",
+            "service": 5,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 35,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dircab.mdef@gouvernement.gov.gn",
+            "first_name": "Colonel Divid ",
+            "last_name": "Haba",
+            "service": 5,
+            "fonction": 3,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 36,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.mdef@gouvernement.gov.gn",
+            "first_name": "Colonel Boubacar ",
+            "last_name": "Diallo",
+            "service": 5,
+            "fonction": 23,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 37,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dsi.mdef@gouvernement.gov.gn",
+            "first_name": "Colonel Adama ",
+            "last_name": "Ciss\u00e9",
+            "service": 5,
+            "fonction": 17,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 38,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.mjdh@gouvernement.gov.gn",
+            "first_name": "Moriba Alain ",
+            "last_name": "Kon\u00e9",
+            "service": 6,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 39,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.mjdh@gouvernement.gov.gn",
+            "first_name": "Ir\u00e8ne Marie ",
+            "last_name": "Hadjimalis",
+            "service": 6,
+            "fonction": 27,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 40,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.mjdh@gouvernement.gov.gn",
+            "first_name": "Lancine ",
+            "last_name": "Ke\u00efta",
+            "service": 6,
+            "fonction": 23,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 41,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dsi.mjdh@gouvernement.gov.gn",
+            "first_name": "Boubacar ",
+            "last_name": "Balde",
+            "service": 6,
+            "fonction": 17,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 42,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "assistantmin.mjdh@gouvernement.gov.gn",
+            "first_name": "Maimouna ",
+            "last_name": "Dioubat\u00e9",
+            "service": 6,
+            "fonction": 26,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 43,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.maeciage@gouvernement.gov.gn",
+            "first_name": "Dr Morissanda ",
+            "last_name": "Kouyat\u00e9",
+            "service": 7,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 44,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.maeciage@gouvernement.gov.gn",
+            "first_name": "Laho ",
+            "last_name": "Bangoura",
+            "service": 7,
+            "fonction": 22,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 45,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.maeciage@gouvernement.gov.gn",
+            "first_name": "Youssef Nana T\u00e8nink\u00e9 ",
+            "last_name": "\nDiar\u00e9",
+            "service": 7,
+            "fonction": 15,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 46,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dsi.maeciage@gouvernement.gov.gn",
+            "first_name": "Soriba Fatou ",
+            "last_name": "SYLLA",
+            "service": 7,
+            "fonction": 17,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 47,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.matd@gouvernement.gov.gn",
+            "first_name": "Mory ",
+            "last_name": "Conde",
+            "service": 8,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 48,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.matd@gouvernement.gov.gn",
+            "first_name": "Moustapha Kobel\u00e9 ",
+            "last_name": "Ke\u00efta",
+            "service": 8,
+            "fonction": 28,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 49,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.matd@gouvernement.gov.gn",
+            "first_name": "M. Fran\u00e7ois Gono ",
+            "last_name": "Cond\u00e9",
+            "service": 8,
+            "fonction": 23,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 50,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dsi.matd@gouvernement.gov.gn",
+            "first_name": "Karamoko Djouba ",
+            "last_name": "Ke\u00efta",
+            "service": 8,
+            "fonction": 17,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 51,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.mspc@gouvernement.gov.gn",
+            "first_name": "Bachir ",
+            "last_name": "Diallo",
+            "service": 9,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 52,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.mspc@gouvernement.gov.gn",
+            "first_name": "Nouha ",
+            "last_name": "Traore",
+            "service": 9,
+            "fonction": 29,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 53,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.mspc@gouvernement.gov.gn",
+            "first_name": "Ibrahima Sory ",
+            "last_name": "Tour\u00e9",
+            "service": 9,
+            "fonction": 23,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 54,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dsi.mspc@gouvernement.gov.gn",
+            "first_name": "Amadou Korka ",
+            "last_name": "Bah",
+            "service": 9,
+            "fonction": 17,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 55,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "assistantmin.mspc@gouvernement.gov.gn",
+            "first_name": "Mory ",
+            "last_name": "Kaba",
+            "service": 9,
+            "fonction": 30,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 56,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.mbudget@gouvernement.gov.gn",
+            "first_name": "Moussa ",
+            "last_name": "Cisse",
+            "service": 10,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 57,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.mbudget@gouvernement.gov.gn",
+            "first_name": "Elhadj Gando ",
+            "last_name": "Barry",
+            "service": 10,
+            "fonction": 28,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 58,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.mbudget@gouvernement.gov.gn",
+            "first_name": "M'mahawa ",
+            "last_name": "Tour\u00e9",
+            "service": 10,
+            "fonction": 23,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 59,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dnsi.mbudget@gouvernement.gov.gn",
+            "first_name": "Baba ",
+            "last_name": "Nabe",
+            "service": 10,
+            "fonction": 17,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 60,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "assistantmin.mbudget@gouvernement.gov.gn",
+            "first_name": "Aichatou ",
+            "last_name": "Barry",
+            "service": 10,
+            "fonction": 26,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 61,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.magel@gouvernement.gov.gn",
+            "first_name": "Mamoudou Nagnalen ",
+            "last_name": "Barry",
+            "service": 11,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 62,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.magel@gouvernement.gov.gn",
+            "first_name": "Hawa ",
+            "last_name": "Sylla",
+            "service": 11,
+            "fonction": 28,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 63,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.magel@gouvernement.gov.gn",
+            "first_name": "Fatoumata ",
+            "last_name": "Bangoura",
+            "service": 11,
+            "fonction": 23,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 64,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dsi.magel@gouvernement.gov.gn",
+            "first_name": "Fode ",
+            "last_name": "Kouyat\u00e9",
+            "service": 11,
+            "fonction": 17,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 65,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.sante@gouvernement.gov.gn",
+            "first_name": "Mamadou Peth\u00e9 ",
+            "last_name": "Diallo",
+            "service": 12,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 66,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.sante@gouvernement.gov.gn",
+            "first_name": "Mohamed Lamine ",
+            "last_name": "Yansan\u00e9",
+            "service": 12,
+            "fonction": 28,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 67,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.sante@gouvernement.gov.gn",
+            "first_name": "Khait\u00e9 ",
+            "last_name": "Sall",
+            "service": 12,
+            "fonction": 15,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 68,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dsi.sante@gouvernement.gov.gn",
+            "first_name": "Nouhan ",
+            "last_name": "Sylla",
+            "service": 12,
+            "fonction": 17,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 69,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "assistantmin.sante@gouvernement.gov.gn",
+            "first_name": "Amiata ",
+            "last_name": "Toure",
+            "service": 12,
+            "fonction": 26,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 70,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.metfp@gouvernement.gov.gn",
+            "first_name": "Alpha Bacar ",
+            "last_name": "Barry",
+            "service": 13,
+            "fonction": 31,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 71,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.metfp@gouvernement.gov.gn",
+            "first_name": "Youssouf Boundou ",
+            "last_name": "Sylla",
+            "service": 13,
+            "fonction": 28,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 72,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.metfp@gouvernement.gov.gn",
+            "first_name": "Fatou Bald\u00e9 ",
+            "last_name": "Yansan\u00e9",
+            "service": 13,
+            "fonction": 15,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 73,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dsi.metfp@gouvernement.gov.gn",
+            "first_name": "Hamidou ",
+            "last_name": "Diallo",
+            "service": 13,
+            "fonction": 17,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 74,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.mcta@gouvernement.gov.gn",
+            "first_name": "Alpha ",
+            "last_name": "Soumah",
+            "service": 14,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 75,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.mcta@gouvernement.gov.gn",
+            "first_name": "Faya Fran\u00e7ois ",
+            "last_name": "Brouno",
+            "service": 14,
+            "fonction": 32,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 76,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.mcta@gouvernement.gov.gn",
+            "first_name": "Saran ",
+            "last_name": "Camara",
+            "service": 14,
+            "fonction": 15,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 77,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dsi.mcta@gouvernement.gov.gn",
+            "first_name": "Mamadou Bobo ",
+            "last_name": "Barry",
+            "service": 14,
+            "fonction": 17,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 78,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.mit@gouvernement.gov.gn",
+            "first_name": "Yaya ",
+            "last_name": "Sow",
+            "service": 15,
+            "fonction": 31,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 79,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.mit@gouvernement.gov.gn",
+            "first_name": "Patrice ",
+            "last_name": "Toupou",
+            "service": 15,
+            "fonction": 28,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 80,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.mit@gouvernement.gov.gn",
+            "first_name": "Cheick Ahmed Tidiane ",
+            "last_name": "Camara",
+            "service": 15,
+            "fonction": 23,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 81,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dsi.mit@gouvernement.gov.gn",
+            "first_name": "Mohamed ",
+            "last_name": "Ke\u00efta",
+            "service": 15,
+            "fonction": 17,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 82,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.medd@gouvernement.gov.gn",
+            "first_name": "Loupou ",
+            "last_name": "Lamah",
+            "service": 16,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 83,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.medd@gouvernement.gov.gn",
+            "first_name": "Safiatou ",
+            "last_name": "Diallo",
+            "service": 16,
+            "fonction": 28,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 84,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.medd@gouvernement.gov.gn",
+            "first_name": "Karim ",
+            "last_name": "Samoura",
+            "service": 16,
+            "fonction": 23,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 85,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "assistantmin.medd@gouvernement.gov.gn",
+            "first_name": "Bangaly ",
+            "last_name": "Sangare",
+            "service": 16,
+            "fonction": 33,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 86,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.mesrs@gouvernement.gov.gn",
+            "first_name": "Djaka ",
+            "last_name": "Sidibe",
+            "service": 17,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 87,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.mesrs@gouvernement.gov.gn",
+            "first_name": "Facinet ",
+            "last_name": "Conte",
+            "service": 17,
+            "fonction": 28,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 88,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.mesrs@gouvernement.gov.gn",
+            "first_name": "Thierno Hamidou ",
+            "last_name": "Bah",
+            "service": 17,
+            "fonction": 23,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 89,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dsi.mesrs@gouvernement.gov.gn",
+            "first_name": "Diakaria ",
+            "last_name": "Diallo",
+            "service": 17,
+            "fonction": 17,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 90,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "assistantmin.mesrs@gouvernement.gov.gn",
+            "first_name": "Sekou ",
+            "last_name": "Diabat\u00e9",
+            "service": 17,
+            "fonction": 30,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 91,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.mines@gouvernement.gov.gn",
+            "first_name": "Moussa ",
+            "last_name": "Magassouba",
+            "service": 18,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 92,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.mines@gouvernement.gov.gn",
+            "first_name": "Mohamed Lamine Sy ",
+            "last_name": "Savan\u00e9",
+            "service": 18,
+            "fonction": 28,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 93,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.mines@gouvernement.gov.gn",
+            "first_name": "Cheick Ahmed Tidiane ",
+            "last_name": "Camara",
+            "service": 18,
+            "fonction": 23,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 94,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dsi.mines@gouvernement.gov.gn",
+            "first_name": "Naby ",
+            "last_name": "Doumbouya",
+            "service": 18,
+            "fonction": 17,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 95,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "assistantmin.mines@gouvernement.gov.gn",
+            "first_name": "Abdoul Aziz ",
+            "last_name": "Camara",
+            "service": 18,
+            "fonction": 30,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 96,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.muhat@gouvernement.gov.gn",
+            "first_name": "Ousmane ",
+            "last_name": "Diallo",
+            "service": 19,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 97,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.muhat@gouvernement.gov.gn",
+            "first_name": "Aboubacar ",
+            "last_name": "Kourouma",
+            "service": 19,
+            "fonction": 28,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 98,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.muhat@gouvernement.gov.gn",
+            "first_name": "Salimatou ",
+            "last_name": "Diallo",
+            "service": 19,
+            "fonction": 23,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 99,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.mjs@gouvernement.gov.gn",
+            "first_name": "Lansana B\u00e9a ",
+            "last_name": "Diallo",
+            "service": 20,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 100,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.mjs@gouvernement.gov.gn",
+            "first_name": "Mohamed ",
+            "last_name": "Billy",
+            "service": 20,
+            "fonction": 28,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 101,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.mjs@gouvernement.gov.gn",
+            "first_name": "Fatoumata ",
+            "last_name": "Conte",
+            "service": 20,
+            "fonction": 23,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 102,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "assistantmin.mjs@gouvernement.gov.gn",
+            "first_name": "Kadiatou ",
+            "last_name": "Camara",
+            "service": 20,
+            "fonction": 26,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 103,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.mtfp@gouvernement.gov.gn",
+            "first_name": "Julien ",
+            "last_name": "Yombouno",
+            "service": 21,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 104,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.mtfp@gouvernement.gov.gn",
+            "first_name": "Aboubacar ",
+            "last_name": "Kourouma",
+            "service": 21,
+            "fonction": 28,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 105,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.mtfp@gouvernement.gov.gn",
+            "first_name": "Ramatoulaye ",
+            "last_name": "Camara",
+            "service": 21,
+            "fonction": 23,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 106,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dnsi.mtfp@gouvernement.gov.gn",
+            "first_name": "Ahassane ",
+            "last_name": "Bangoura",
+            "service": 21,
+            "fonction": 17,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 107,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "assistantmin.mtfp@gouvernement.gov.gn",
+            "first_name": "Ivette ",
+            "last_name": "Tonguino",
+            "service": 21,
+            "fonction": 30,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 108,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.mcipme@gouvernement.gov.gn",
+            "first_name": "Bernard ",
+            "last_name": "Goumou",
+            "service": 22,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 109,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.mcipme@gouvernement.gov.gn",
+            "first_name": "Mohamed ",
+            "last_name": "Bakayoko",
+            "service": 22,
+            "fonction": 28,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 110,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.mcipme@gouvernement.gov.gn",
+            "first_name": "Mouhammar sanfang ",
+            "last_name": "Ciss\u00e9",
+            "service": 22,
+            "fonction": 23,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 111,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dsi.mcipme@gouvernement.gov.gn",
+            "first_name": "Ousmane ",
+            "last_name": "Cisse",
+            "service": 22,
+            "fonction": 17,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 112,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "assistantmin.mcipme@gouvernement.gov.gn",
+            "first_name": "Lansin\u00e9 ",
+            "last_name": "Conde",
+            "service": 22,
+            "fonction": 30,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 113,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.mpfe@gouvernement.gov.gn",
+            "first_name": "Aicha Nanette ",
+            "last_name": "Cont\u00e9",
+            "service": 23,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 114,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.mpfe@gouvernement.gov.gn",
+            "first_name": "Yassy Roger ",
+            "last_name": "Tolno",
+            "service": 23,
+            "fonction": 28,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 115,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.mpfe@gouvernement.gov.gn",
+            "first_name": "Aissatou ",
+            "last_name": "Barry",
+            "service": 23,
+            "fonction": 23,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 116,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "assistantmin.mpfe@gouvernement.gov.gn",
+            "first_name": "Aissata ",
+            "last_name": "Doumbouya",
+            "service": 23,
+            "fonction": 30,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 117,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.mepua@gouvernement.gov.gn",
+            "first_name": "Guillaume ",
+            "last_name": "Hawing",
+            "service": 24,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 118,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.mepua@gouvernement.gov.gn",
+            "first_name": "Julien ",
+            "last_name": "Bongono",
+            "service": 24,
+            "fonction": 28,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 119,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.mepua@gouvernement.gov.gn",
+            "first_name": "Moustapha ",
+            "last_name": "Doumbouya",
+            "service": 24,
+            "fonction": 23,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 120,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dsi.mepua@gouvernement.gov.gn",
+            "first_name": "dsi ",
+            "last_name": "mepua",
+            "service": 24,
+            "fonction": 17,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 121,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "assisatantmin.mepua@gouvernement.gov.gn",
+            "first_name": "Aminata ",
+            "last_name": "Keita",
+            "service": 24,
+            "fonction": 30,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 122,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.mpem@gouvernement.gov.gn",
+            "first_name": "Charlotte ",
+            "last_name": "Daff\u00e9",
+            "service": 25,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 123,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.mpem@gouvernement.gov.gn",
+            "first_name": "Kaba Amara ",
+            "last_name": "Camara",
+            "service": 25,
+            "fonction": 28,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 124,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.mpem@gouvernement.gov.gn",
+            "first_name": "Ibrahima Kalil ",
+            "last_name": "Gueye",
+            "service": 25,
+            "fonction": 23,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 125,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dsi.mpem@gouvernement.gov.gn",
+            "first_name": "Oumar ",
+            "last_name": "Keita",
+            "service": 25,
+            "fonction": 17,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 126,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "contact.mpem@gouvernement.gov.gn",
+            "first_name": "Mail ",
+            "last_name": "Contact",
+            "service": 25,
+            "fonction": 34,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 127,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.mehh@gouvernement.gov.gn",
+            "first_name": "Ibrahima Abe ",
+            "last_name": "Sylla",
+            "service": 26,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 128,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.mehh@gouvernement.gov.gn",
+            "first_name": "Ahmed Sekou ",
+            "last_name": "Keita",
+            "service": 26,
+            "fonction": 28,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 129,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.mehh@gouvernement.gov.gn",
+            "first_name": "Nima ",
+            "last_name": "Bah",
+            "service": 26,
+            "fonction": 15,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 130,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dsi.mehh@gouvernement.gov.gn",
+            "first_name": "Bangaly ",
+            "last_name": "Camara",
+            "service": 26,
+            "fonction": 17,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 131,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "assistantmin.mehh@gouvernement.gov.gn",
+            "first_name": "Albert ",
+            "last_name": "Keita",
+            "service": 26,
+            "fonction": 30,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 132,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.sgg@gouvernement.gov.gn",
+            "first_name": "Abdouramane Sikhé ",
+            "last_name": " CAMARA",
+            "service": 27,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 133,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sga.sgg@gouvernement.gov.gn",
+            "first_name": "Benoit ",
+            "last_name": "Kamano",
+            "service": 27,
+            "fonction": 35,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 134,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.sgg@gouvernement.gov.gn",
+            "first_name": "Sarah ",
+            "last_name": "Camara",
+            "service": 27,
+            "fonction": 15,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 135,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dmtg.sgg@gouvernement.gov.gn",
+            "first_name": "Mamoudou ",
+            "last_name": "Keita",
+            "service": 27,
+            "fonction": 17,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 136,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dirtg.sgg@gouvernement.gov.gn",
+            "first_name": "Mamady ",
+            "last_name": "Diawara",
+            "service": 27,
+            "fonction": 36,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 137,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.sgar@gouvernement.gov.gn",
+            "first_name": "Elhadj Karamoko ",
+            "last_name": "Diawara",
+            "service": 28,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 138,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sga.sgar@gouvernement.gov.gn",
+            "first_name": "Ibrahima Ousmane ",
+            "last_name": "Bah",
+            "service": 28,
+            "fonction": 35,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 139,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.sgar@gouvernement.gov.gn",
+            "first_name": "chefcab ",
+            "last_name": "sgar",
+            "service": 28,
+            "fonction": 23,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 140,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "assistantmin.sgar@gouvernement.gov.gn",
+            "first_name": "Abdoulaye ",
+            "last_name": "Toure",
+            "service": 28,
+            "fonction": 30,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 141,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ministre.mci@gouvernement.gov.gn",
+            "first_name": "Rose Pola ",
+            "last_name": "Pricemou",
+            "service": 29,
+            "fonction": 21,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 142,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sg.mci@gouvernement.gov.gn",
+            "first_name": "Souleymane ",
+            "last_name": "Bah",
+            "service": 29,
+            "fonction": 28,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 143,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "chefcab.mci@gouvernement.gov.gn",
+            "first_name": "Ad\u00e8le ",
+            "last_name": "Camara",
+            "service": 29,
+            "fonction": 15,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 144,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dsi.mci@gouvernement.gov.gn",
+            "first_name": "Aguibou ",
+            "last_name": "Barry",
+            "service": 29,
+            "fonction": 17,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 145,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "assistantmin.mci@gouvernement.gov.gn",
+            "first_name": "Rokhaya ",
+            "last_name": "N'Diaye",
+            "service": 29,
+            "fonction": 30,
+            "type_utilisateur": 2,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 146,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dgrtg.mic@gouvernement.gov.gn",
+            "first_name": "Fana ",
+            "last_name": "Soumah",
+            "service": 29,
+            "fonction": 37,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 147,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "gouverneur.bcrg@gouvernement.gov.gn",
+            "first_name": "Karamoko ",
+            "last_name": "KABA",
+            "service": 30,
+            "fonction": 38,
+            "type_utilisateur": 1,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 148,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dg.ande@gouvernement.gov.gn",
+            "first_name": "Youssouf ",
+            "last_name": "Aribot",
+            "service": 31,
+            "fonction": 39,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 149,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "dga.ande@gouvernement.gov.gn",
+            "first_name": "Mariame ",
+            "last_name": "Bah",
+            "service": 31,
+            "fonction": 40,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 150,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "ag.acgp@gouvernement.gov.gn",
+            "first_name": "Imael ",
+            "last_name": "Keita",
+            "service": 32,
+            "fonction": 41,
+            "type_utilisateur": 7,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 2,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spprg@gouvernement.gov.gn",
+            "first_name": "sp 1",
+            "last_name": "sp",
+            "service": 1,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 151
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 15,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sppremierministre@gouvernement.gov.gn",
+            "first_name": "sp 2",
+            "last_name": "sp",
+            "service": 2,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 152
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 23,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.mpten@gouvernement.gov.gn",
+            "first_name": "sp 3",
+            "last_name": "sp",
+            "service": 3,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 153
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 29,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.mefp@gouvernement.gov.gn",
+            "first_name": "sp 4",
+            "last_name": "sp",
+            "service": 4,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 154
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 34,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.mdef@gouvernement.gov.gn",
+            "first_name": "sp 5",
+            "last_name": "sp",
+            "service": 5,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 155
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 38,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.mjdh@gouvernement.gov.gn",
+            "first_name": "sp 6",
+            "last_name": "sp",
+            "service": 6,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 156
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 43,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.maeciage@gouvernement.gov.gn",
+            "first_name": "sp 7",
+            "last_name": "sp",
+            "service": 7,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 157
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 47,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.matd@gouvernement.gov.gn",
+            "first_name": "sp 8",
+            "last_name": "sp",
+            "service": 8,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 158
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 51,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.mspc@gouvernement.gov.gn",
+            "first_name": "sp 9",
+            "last_name": "sp",
+            "service": 9,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 159
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 56,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.mbudget@gouvernement.gov.gn",
+            "first_name": "sp 10",
+            "last_name": "sp",
+            "service": 10,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 160
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 61,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.magel@gouvernement.gov.gn",
+            "first_name": "sp 11",
+            "last_name": "sp",
+            "service": 11,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 161
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 65,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.sante@gouvernement.gov.gn",
+            "first_name": "sp 12",
+            "last_name": "sp",
+            "service": 12,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 162
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 70,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.metfp@gouvernement.gov.gn",
+            "first_name": "sp 13",
+            "last_name": "sp",
+            "service": 13,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 163
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 74,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.mcta@gouvernement.gov.gn",
+            "first_name": "sp 14",
+            "last_name": "sp",
+            "service": 14,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 164
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 78,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.mit@gouvernement.gov.gn",
+            "first_name": "sp 15",
+            "last_name": "sp",
+            "service": 15,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 165
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 82,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.medd@gouvernement.gov.gn",
+            "first_name": "sp 16",
+            "last_name": "sp",
+            "service": 16,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 166
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 86,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.mesrs@gouvernement.gov.gn",
+            "first_name": "sp 17",
+            "last_name": "sp",
+            "service": 17,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 167
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 91,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.mines@gouvernement.gov.gn",
+            "first_name": "sp 18",
+            "last_name": "sp",
+            "service": 18,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 168
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 96,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.muhat@gouvernement.gov.gn",
+            "first_name": "sp 19",
+            "last_name": "sp",
+            "service": 19,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 169
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 99,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.mjs@gouvernement.gov.gn",
+            "first_name": "sp 20",
+            "last_name": "sp",
+            "service": 20,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 170
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 103,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.mtfp@gouvernement.gov.gn",
+            "first_name": "sp 21",
+            "last_name": "sp",
+            "service": 21,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 171
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 108,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.mcipme@gouvernement.gov.gn",
+            "first_name": "sp 22",
+            "last_name": "sp",
+            "service": 22,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 172
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 113,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.mpfe@gouvernement.gov.gn",
+            "first_name": "sp 23",
+            "last_name": "sp",
+            "service": 23,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 173
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 117,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.mepua@gouvernement.gov.gn",
+            "first_name": "sp 24",
+            "last_name": "sp",
+            "service": 24,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 174
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 122,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.mpem@gouvernement.gov.gn",
+            "first_name": "sp 25",
+            "last_name": "sp",
+            "service": 25,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 175
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 127,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.mehh@gouvernement.gov.gn",
+            "first_name": "sp 26",
+            "last_name": "sp",
+            "service": 26,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 176
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 132,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.sgg@gouvernement.gov.gn",
+            "first_name": "sp 27",
+            "last_name": "sp",
+            "service": 27,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 177
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 137,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.sgar@gouvernement.gov.gn",
+            "first_name": "sp 28",
+            "last_name": "sp",
+            "service": 28,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 178
+    },
+    {
+        "model": "user.Utilisateur",
+        "fields": {
+            "chief": 141,
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "spministre.mci@gouvernement.gov.gn",
+            "first_name": "sp 29",
+            "last_name": "sp",
+            "service": 29,
+            "fonction": 42,
+            "type_utilisateur": 4,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        },
+        "pk": 179
+    },
+    {
+        "model": "user.Utilisateur",
+        "pk": 180,
+        "fields": {
+            "is_superuser": "False",
+            "is_admin": "False",
+            "is_staff": "False",
+            "email": "sc@gov.gn",
+            "first_name": "secretaire",
+            "last_name": "central",
+            "service": 33,
+            "fonction": 42,
+            "type_utilisateur": 11,
+            "password": "pbkdf2_sha256$20000$2nQjdtoy4qiN$+mbER+cbXOReNlNGoqBXRsAWVlLHIFvhCBe0TRx7qEw=",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    },
+    {
+        "model": "user.Company",
+        "pk": 1,
+        "fields": {
+            "name": "Application de Gestion de Courriers",
+            "created_at": "2018-07-20 07:07:07.61434+00",
+            "updated_at": "2018-07-20 07:07:07.61434+00"
+        }
+    }
+]

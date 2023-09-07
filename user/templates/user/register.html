@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load permission_tags %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block style %}
+   <style type="text/css">
+     .btn-send {
+	  background-color: #337ab7 !important; 
+	  color: #FFFFFF;
+      }
+
+   	 #_login {
+   	 	color: #F0A2CD;
+   	 }
+
+   	 #form {
+   	 	margin-top: 1%;
+   	 }
+
+   	 .well {
+   	 	background: rgba(255, 255, 255, 1);
+		opacity: 0.8;
+   	 }
+
+   	 .head {
+   	 	margin-top: 1%;
+		padding: 0;
+   	 }
+	 .head p a {
+		background-color: transparent;
+		color: #337ab7;
+		text-decoration: none;
+		padding: 3px;
+	 }
+	 .head p a:hover,
+	 .head p a:active {
+		background: #337ab7;
+		color: white;
+		border-radius: 3px;
+	 }
+	 .buttonHolder {
+		text-align: left;
+	 }
+	 .buttonHolder input{
+	    font-weight: bold;
+	    font-size: 100%;
+	 }
+	 .buttonHolder input:hover {
+	   cursor: pointer;
+	 }
+   </style>
+{% endblock %}
+
+{% block content %}
+	{% if lien.is_active %}
+		<div class="head row col-md-6 col-md-offset-3">
+			<p>J ais dejas un un compte <a href="{% url 'user:login' %}" class="login"><span class="glyphicon glyphicon-hand-right"></span>   Connection</a></p>
+			<p>Enregistrement d un utilisateur</p>
+		</div>
+
+		<div class="row" id="form">
+				<div class="col-md-6 col-md-offset-3 well">
+					{% crispy form %}
+				</div>
+		</div>
+	{% else %}
+		<p class="form-group">Cet lien n est plus valide oubien c est un mauvais lien</p>
+
+	{% endif %}
+
+{% endblock content %}
+{% block javascript %}
+	<script>
+
+	</script>
+{% endblock javascript%}
